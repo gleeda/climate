@@ -1,0 +1,1038 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<!--[if IEMobile 7]><html class="iem7 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)]><!--> <html class="no-js not-oldie" lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgEFVVRQGwEBXVRTBQcP"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="../sites/all/themes/epa/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width" />
+<meta name="MobileOptimized" content="width" />
+<meta http-equiv="ImageToolbar" content="false" />
+<meta http-equiv="cleartype" content="on" />
+<!--googleon: all--><meta name="DC.description" content="EPA Agriculture News from 2013" />
+<meta name="DC.title" content="Agriculture: News 2013" />
+<!--googleoff: snippet--><meta name="keywords" content="Agriculture News 2013, press release, environmental news, regulations, announcements" />
+<link rel="canonical" href="agriculture-news-2013.html" />
+<link rel="shortlink" href="https://www.epa.gov/node/85923" />
+<meta name="DC.language" content="en" />
+<meta name="DC.Subject.epachannel" content="Learn the Issues" />
+<meta name="DC.type" content="Overviews and Factsheets" />
+<meta name="DC.date.created" content="2015-05-28" />
+<meta name="DC.date.modified" content="2016-07-22" />
+<meta name="DC.date.reviewed" content="2017-07-22" />
+<meta name="DC.creator" content="US EPA,OECA" />
+<meta name="WebArea" content="Agriculture" />
+<meta name="WebAreaType" content="Resource Directory" />
+<meta name="ContentType" content="page" />
+  <title>Agriculture: News 2013 | Agriculture | US EPA</title>
+  <!--googleoff: all-->
+  <link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_3h5HfPyG4w0xmgk_oaLP90_rUIs7Xmed0sNIfCxGAyg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_NFNG4tEiKv-n_hlnQ4iBNlFbb-9XRaRVA9wRk6nUPHY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_Pvo-DHIdW2Qn9LljtH2R1QKqzm8QoJ18zl6wR9Dk-Ak.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_28CvFue6tf4M8aL9zid2j2W58Z6HleySMQyNH35QhI0.css" media="all" />
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="https://www.epa.gov/sites/production/files/css/css_H7Qs31C_4pOAKdUe1sAA01nOyZTqO_KOIt1uDr0iKB4.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_68w49Vk1SYPj8EPx2iW8fUagDJ4xc2WJQO7Dn7aLNaU.css" media="all" />
+  <link rel="alternate" type="application/atom+xml" title="EPA.gov All Press Releases" href="https://www.epa.gov/newsreleases/search/rss" />
+  <link rel="alternate" type="application/atom+xml" title="EPA.gov Headquarters Press Releases" href="https://www.epa.gov/newsreleases/search/rss/field_press_office/headquarters" />
+  <link rel="alternate" type="application/atom+xml" title="Greenversations, EPA's Blog" href="https://blog.epa.gov/blog/feed/" />
+  <link rel="alternate" type="application/atom+xml" title="Agriculture" href="../feed/78329/rss.xml" />  <!--[if lt IE 9]><script src="/sites/all/themes/epa/js/html5.js"></script><![endif]-->  </head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node-85923 node-type-page og-context og-context-node og-context-node-78329 section-agriculture resource-directory" >
+  <div class="skip-links"><a href="agriculture-news-2013.html#main-content" class="skip-link element-invisible element-focusable">Jump to main content</a></div>
+      
+  
+  <div class="region-alert">  <div id="block-pane-epa-admin-public-alert-message" class="block block-pane  block-pane-epa-admin-public-alert-message block-alert">
+  
+  
+  
+  
+      
+</div>
+<div id="block-pane-epa-gtm" class="block block-pane  block-pane-epa-gtm">
+  
+  
+  
+  
+    <!-- Google Tag Manager -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-L8ZB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+"//www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,"script","dataLayer","GTM-L8ZB");</script>
+<!-- End Google Tag Manager -->  
+</div>
+  </div>
+<header class="masthead clearfix" role="banner">
+
+      <img class="site-logo" src="../sites/all/themes/epa/logo.png" alt="" />
+  
+  
+  <hgroup class="site-name-and-slogan">
+      <h1 class="site-name">
+
+      
+      <a href="../index.html" title="Go to the home page" rel="home">      <span>US EPA</span>
+      </a>
+    </h1>
+  
+      <div class="site-slogan">United States Environmental Protection Agency</div>
+  
+  </hgroup>
+  
+  
+  <div class="region-header">  <div id="block-epa-core-gsa-epa-search" class="block block-epa-core  block-epa-core-gsa-epa-search">
+  
+  
+  
+  
+    <form class="epa-search" method="get" action="https://search.epa.gov/epasearch/epasearch">
+  <label class="element-hidden" for="search-box">Search</label>
+  <input class="form-text" placeholder="Search EPA.gov" name="querytext" id="search-box" value=""/>
+  <button class="epa-search-button" id="search-button" type="submit" title="Search">Search</button>
+  <input type="hidden" name="areaname" value="" />
+  <input type="hidden" name="areacontacts" value="" />
+  <input type="hidden" name="areasearchurl" value="" />
+  <input type="hidden" name="typeofsearch" value="epa" />
+  <input type="hidden" name="result_template" value="2col.ftl" />
+  </form>  
+</div>
+  </div>
+</header>
+<section id="main-content" class="main-content clearfix" role="main" lang="en">
+    
+  
+  <div class="region-preface clearfix">  <div id="block-views-revision-hublinks-block" class="block block-views  block-views-revision-hublinks-block">
+
+  
+  
+    <div class="view view-revision-hublinks view-id-revision_hublinks view-display-id-block view-dom-id-a18ca1a42f3c411fff09c98eab45ee07">        <span class="related-info"><strong>Related Topics:</strong> </span>      
+
+<ul class="menu pipeline">
+  <li class="menu-item">  
+          <a href="ag101/printcrop.html">Agriculture</a>  </li>
+
+</ul>          </div>  
+</div>
+<div id="block-pane-social-sharing" class="block block-pane  block-pane-social-sharing">
+
+  
+  
+    <ul class="menu utility-menu">
+    <li id="share" class="menu-item">
+        <button class="share-button">Share</button>
+        <ul>
+            <li class="share-facebook">
+                <a class="share-link" href="https://www.facebook.com/sharer.php?u=https://www.epa.gov/agriculture/agriculture-news-2013&t=Agriculture: News 2013" title="Share this page" target="_blank">Facebook</a>
+            </li>
+            <li class="share-twitter">
+                <a class="share-link" href="https://twitter.com/intent/tweet?original_referer=https://www.epa.gov/agriculture/agriculture-news-2013&text=Agriculture: News 2013&url=https://www.epa.gov/agriculture/agriculture-news-2013&via=EPA&count=none&lang=en" title="Tweet this page" target="_blank">Twitter</a>
+            </li>
+            <li class="share-googleplus">
+                <a class="share-link" href="https://plus.google.com/share?url=https://www.epa.gov/agriculture/agriculture-news-2013" title="Plus 1 this page" target="_blank">Google+</a>
+            </li>
+            <li class="share-pinterest">
+                <a class="share-link" href="https://pinterest.com/pin/create/button/?url=https://www.epa.gov/agriculture/agriculture-news-2013&description=Agriculture: News 2013&media=https://www.epa.gov/sites/all/themes/epa/img/epa-seal.png" title="Pin this page" target="_blank">Pinterest</a>
+            </li>
+        </ul>
+    </li>
+</ul>  
+</div>
+<div id="block-pane-epa-web-area-connect" class="block block-pane  block-pane-epa-web-area-connect">
+
+  
+  
+    <ul class="menu utility-menu"><li class="menu-item"><a href="../node/78331.html" class="menu-link">Contact Us</a></li></ul>  
+</div>
+  </div>
+    <div class="main-column clearfix">
+            
+          <!--googleon: all-->
+      <h1  class="page-title">Agriculture: News 2013</h1>
+      <!--googleoff: all-->
+    
+            
+    
+    <!--googleon: all-->
+    
+  
+    
+
+
+
+
+<div class="panel-pane pane-node-content" >
+
+  
+  
+  
+  
+  
+  <div class="pane-content">
+    <div class="node node-page clearfix view-mode-full ">
+
+  
+  <p>This information is provided for reference. Over time, links to news items may become unavailable, in these cases the item will remain listed, but no link will be provided. Also, please be aware that the information in any particular article may be outdated or superseded by additional information.</p>
+
+<div class="box multi related-info right">
+	<h2 class="pane-title">Ag News from EPA's Ag Center</h2>
+
+	<div class="pane-content">
+		<ul><li><a href="../node/85623.html">Ag Newsroom Home</a></li>
+			<li><a href="agriculture-news-2015.html">Ag News from 2015</a></li>
+			<li><a href="agriculture-news-2014.html">Ag News from 2014</a></li>
+		</ul><hr /><ul><li><a href="../node/100383.html">Join the Ag Center's News Service</a></li>
+		</ul></div>
+</div>
+
+<h2>December, 2013</h2>
+
+<p><strong>December, 2013 Livestock and Poultry Learning Center Newsletter</strong><br />
+	The December issue covers the webcast topic of nutrient recovery which is being presented in a 3-part series. (Part 1 archive). We also announced the dates and location of the second Waste to Worth conference will be held March 30-April 3, 2015 in Seattle, Washington. A must-read series was published by the American Society of Animal Science on mitigating greenhouse gas emissions through the use of management techniques and technologies. There is also a new manure textbook, precision phosphorus feeding information, and guide on preventing human disease outbreaks and public events with animals. Hot topics touch on court cases that rule whether or not manure is "pollution" and a USGS study on the connection between groundwater and surface water nitrate levels, among other topics.</p>
+
+<h2>December 20, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/9a484f18de57345285257c47004e8100!OpenDocument">Florida Pesticide Producer to Pay $1.7 Million Penalty for Selling Misbranded Pesticides</a></strong><br />
+	The U.S. Environmental Protection Agency (EPA) announced today that Harrell’s LLC, a pesticide producer based in Lakeland, Fla., has agreed to pay $1,736,560 in civil penalties for allegedly distributing and selling misbranded pesticides and other violations of the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA).<br />
+	The penalty is one of the largest ever for an enforcement case under FIFRA.</p>
+
+<h2>December 19, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/bc0240b781dd5aa785257c4600736fbb!OpenDocument">EPA West Coast Collaborative announces more than $2 million in grants to reduce harmful diesel emissions in western states and Pacific Island territories</a></strong><br />
+	The U.S. Environmental Protection Agency today announced over $2.2 million in Diesel Emission Reduction Act (DERA) grants to partners along the West Coast and Pacific Island Territories. The 14 grants are administered through the West Coast Collaborative, an EPA Region 9 and Region 10 public-private partnership aimed at reducing diesel emissions and leveraging an additional $6 million from public, private and nonprofit partners.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/90f2623201eb56e585257c4600682b61!OpenDocument">U.S. EPA fines agricultural products companies $74,880 for pesticide violations in Calif. and Ariz.</a></strong><br />
+	The U.S. Environmental Protection Agency today announced settlements with two companies selling agricultural chemicals in Arizona and California over improper storage and containment of federally regulated pesticides.<br />
+	San Francisco, Calif-based agricultural products company Wilbur-Ellis must pay $62,080 in civil penalties and, separately, Collierville, Tenn.-based agricultural products company Helena Chemical must pay $12,800 in civil penalties. Both companies had multiple violations under the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA), which regulates the distribution, sale and use of pesticides in the U.S.</p>
+
+<h2>December 12, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/1a8ed5fce728854585257c3f0055521d!OpenDocument">EPA Takes Action to Protect Farm Workers in Puerto Rico; Bayer CropScience to Initiate Measures to Protect Workers and Pay $53,000 Penalty</a></strong><br />
+	The U.S. Environmental Protection Agency has reached an agreement with Bayer CropScience LP, a company that operates a research facility and nursery in Sabana Grande, Puerto Rico, to correct violations of federal regulations governing the use of pesticides on farms. The company failed to follow federal rules aimed at reducing or eliminating the exposure of farm workers to chemicals. Under the terms of the agreement, the company will take a number of steps to better protect the health of the workers at its facilities and come into full compliance with federal pesticide law.</p>
+
+<h2>December 03, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/9b1de65380f1539785257c36006aa571!OpenDocument">Twin Falls fish farm settles with EPA for water pollution violations</a></strong><br />
+	A Twin Falls commercial fish and frog farm has settled with the U.S. Environmental Protection Agency  for repeatedly violating the Clean Water Act and polluting the Snake River in South-central Idaho.<br />
+	McCollum Enterprises, Limited Partnership, operates the aquaculture facility known as the Canyon Springs Fish Farm located near Twin Falls, Idaho. The facility raises Tilapia and American Bullfrogs commercially, supplying fish markets and wholesalers with fresh fish and frogs across the Northwest. From June 2008 to March 2012, EPA identified over 550 violations of the facility’s discharge permit, including numerous releases of phosphorus-laden wastewater. To settle the violations, McCollum Enterprises has agreed to pay a $25,000 penalty.  Outside of the settlement, the company has also invested in facility improvements that have significantly reduced fish mortalities and phosphorus pollution to the Snake River.</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>November 2013</h2>
+
+<p><strong>November Livestock and Poultry Environmental Learning Center Newsletter </strong><br />
+	The November issue introduces a three-part webcast series on recovering nutrients from manure. Part 1 is on November 15. LPELC teams want to remind everyone about manure sampling, carcass disposal, and a climate change online course. Additional topics are the trends in nitrate levels in the Mississippi River Basin and a new publication on vermicomposting from ATTRA. You can also find out more on tile drainage, a cash prize for coming up with an idea to reduce nutrient pollution, and the most recent, of many, court rulings in cases involving the Environmental Protection Agency. As always, the newsletter also keeps you up-to-date on state programs, events and "manure in the news". </p>
+
+<h2>November 20, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/4022d4435bda36fe85257c290060a6db!OpenDocument">EPA Offers Funding to Reduce Pollution from Diesel Engines </a></strong><br />
+	The U.S. Environmental Protection Agency (EPA) has made available $2 million in funding for rebates to help public and private construction equipment owners replace or retrofit older diesel construction engines. The rebates will reduce harmful pollution and improve air quality in local areas.<br />
+	“Exhaust from diesel construction equipment affects children, senior citizens and others in neighborhoods across the country”,” said Janet McCabe, acting assistant administrator for EPA’s Office of Air and Radiation. "These rebates will help equipment owners protect public health and improve air quality near construction sites while updating their fleets.”</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/d2b6e11d82f24abc85257c290054fc0a!OpenDocument">EPA Awards $556,650 to Help Massachusetts Marine Vessels Reduce Diesel Emissions </a></strong><br />
+	Two Massachusetts projects have been awarded more than a half-million dollars under a competitive national grant competition to reduce diesel emissions.<br />
+	The grants, totaling $556,650, were made under the Diesel Emissions Reduction Act (DERA). The funding will assist CLF Ventures, Inc., which is receiving $300,000 to repower the Spirit of Boston; and the Northeast States for Coordinated Air Use Management (NESCAUM), which has been awarded $256,650 to repower eight commercial lobster boats.</p>
+
+<h2>November 15, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/81c99e6d27c730c485257c24005eecb0!OpenDocument">EPA Proposes 2014 Renewable Fuel Standards / Proposal Seeks Input to Address “E10 Blend Wall,” Reaffirms Commitment to Biofuels </a></strong><br />
+	The U.S. Environmental Protection Agency (EPA) today proposed for public comment the levels of renewable fuels to be blended into gasoline and diesel as required by Congress under the Energy Independence and Security Act of 2007. Developed with input from the U.S. Department of Energy and U.S. Department of Agriculture, the proposal seeks public input on annual volume requirements for renewable fuels in all motor vehicle gasoline and diesel produced or imported by the United States in 2014. The proposal seeks to put the Renewable Fuel Standard (RFS) program on a steady path forward – ensuring the continued long-term growth of the renewable fuel industry – while seeking input on different approaches to address the “E10 blend wall.”</p>
+
+<h2>November 12, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/04e0e423679684f385257c2100711eb2!OpenDocument">EPA Region 7 to Participate at National Association of Farm Broadcasting Trade Talk Event Nov. 14 in Kansas City, Mo.</a></strong><br />
+	EPA officials will be available for interviews at the annual National Association of Farm Broadcasting (NAFB) Trade Talk event at the Westin Crown Center Hotel in Kansas City, Mo., on Thursday, Nov. 14.<br />
+	Interview topics include outreach to the agricultural community, regulatory updates, animal feeding operations, nutrient management and pesticides.</p>
+
+<h2>November 6, 2013 </h2>
+
+<p><strong>Pesticide News Story: EPA Seeks Public Input on Newly Designed Graphic for Bug Repellent Labels - New graphic will help consumers make informed choices to protect their health</strong><br />
+	The U.S. Environmental Protection Agency (EPA) has released a Federal Register Notice seeking public input on a new insect repellent graphic for skin-applied insect repellent product labels. The graphic, which may be applied voluntarily by manufacturers, will provide consumers with important health information including the estimated number of hours a product will repel potentially harmful insects like mosquitoes and ticks when used as directed.<br />
+	"EPA is working to create a system that does for bug repellents what SPF labeling did for sunscreens," said Jim Jones, assistant administrator of the Office of Chemical Safety and Pollution Prevention. "By providing vital health information to consumers, this new graphic will help parents, hikers and the general public better protect themselves from serious health problems caused by mosquito and tick bites."</p>
+
+<h2>November 4, 2013 </h2>
+
+<p><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/1be24a90a16614ea85257c190071f774!OpenDocument"><strong>WEDNESDAY, November 6: EPA Chief in Kansas City to Support Environmental Justice Efforts </strong></a><br />
+	EPA Administrator Gina McCarthy will be in Kansas City, Mo., on Wednesday, Nov. 6, to award an environmental justice grant to the Black Health Care Coalition. <br />
+	The grant will further EPA’s ongoing efforts to make a visible difference in communities across the country by educating citizens on environmental factors related to their health. Administrator McCarthy will also lead a roundtable discussion about creating a healthy environment for children, and will highlight EPA’s commitment to carrying out President Obama’s Climate Action Plan to reduce carbon pollution.</p>
+
+<h2>November 1, 2013 </h2>
+
+<p><strong>Assessing Pesticide Risks to Endangered Species – Workshop on Implementing NAS Recommendations </strong><br />
+	On November 15, 2013, four federal agencies – the EPA, NOAA's National Marine Fisheries Service, the U.S. Fish and Wildlife Service and the U.S. Department of Agriculture – will hold a stakeholder workshop entitled "Status of Efforts to Implement the Recommendations of the National Academy of Sciences' Report, 'Assessing Risks to Endangered and Threatened Species from Pesticides.'" The four agencies worked collaboratively to develop interim scientific policies and procedures, and will present their joint Interim Approaches for implementing the recommendations contained in the April 2013 NAS report. The stakeholder workshop will provide an opportunity for the public to provide feedback on the document. This Interim Approaches document and a meeting agenda will be available shortly before the meeting.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/869135c2b949560385257c16004d932f!OpenDocument">EPA Releases Agency Plans for Adapting to a Changing Climate</a></strong><br />
+	The U.S. Environmental Protection Agency (EPA) today released its draft Climate Change Adaptation Implementation Plans for public review and comment. In support of President Obama’s Climate Action Plan and Executive Order on Preparing the United States for the Impacts of Climate Change announced today, the Implementation Plans provide detailed information about the actions EPA plans to take across the country to help communities adapt to a changing climate. <br />
+	“To meet our mission of protecting public health and the environment, EPA must help communities adapt to a changing climate,” said EPA Administrator Gina McCarthy. “These Implementation Plans offer a roadmap for agency work to meet that responsibility, while carrying out President Obama’s goal of preparing the country for climate-related challenges.”</p>
+
+<p><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/74b103eb8a56fdc585257c16005708da!OpenDocument"><strong>EPA Hosts 2013 International Decontamination Research and Development Conference </strong></a><br />
+	The U.S. Environmental Protection Agency will hold its 2013 International Decontamination Research and Development Conference on November 5-7 in Research Triangle Park, North Carolina. <br />
+	This year’s conference will focus on research around the decontamination of indoor and outdoor areas, and materials contaminated with biological, chemical, and radiological agents. Richard Danzig, Vice-Chair of the Board of Trustees of the RAND Corporation, a member of the Defense Policy Board and the President’s Intelligence Advisory Board, and a Director of the Center for a New American Security will give the keynote speech. Lek Kadeli, EPA’s Deputy Assistant Administrator, Office of Research and Development, will be discussing how EPA's research helps enhance community sustainability by preparing communities for the challenges ahead and strengthening their resiliency in the wake of future disasters.</p>
+
+<p><strong>Progressive Nutrition of Norfolk, Neb., to Pay $125,000 for Settlement of Federal Pesticide Violations </strong><br />
+	Progressive Nutrition, a pesticide producer in Norfolk, Neb., has agreed to pay a civil penalty totaling $125,000 to settle allegations related to the unregistered production and distribution of misbranded and unregistered pesticides in violation of the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA).</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>October 2013</h2>
+
+<p><strong>October Livestock and Poultry Environmental Learning Center Newsletter</strong> <br />
+	The October issue features webcasts on a water quality risk assessment tool and nutrient recovery from digesters. The LPELC has been hard at work with an online course on animal ag and climate change. The featured video is on "Health Impacts of Air Emissions from Animal Feeding Operations". The national resources section includes a plethora of climate change reports from several United Nations subsidiaries as well as AgSTAR conference proceedings and an EPA nutrient geospatial data tool. Hot topics include pigs and MRSA, several court cases against EPA being decided, biochar, steroids, and plastic made from manure. As always, there are state program highlights, events, and "manure in the news".</p>
+
+<h2>October 25, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/eedab09b294b8d0385257c0f007139c6!OpenDocument">County Edge Dairy Inc. to Pay $20,000 Penalty for Clean Water Act Violations at its Inwood, Iowa, Facility</a></strong><br />
+	County Edge Dairy Inc. has agreed to pay a $20,000 civil penalty to settle alleged violations of the Clean Water Act at its Inwood, Iowa, facility, the Environmental Protection Agency announced today.<br />
+	County Edge Dairy qualifies as a large Concentrated Animal Feeding Operation (CAFO) under Clean Water Act regulations. However, at the time of EPA’s inspection in July 2012, County Edge Dairy did not possess a National Pollutant Discharge Elimination System (NPDES) permit as required by law. The dairy confined approximately 1,000 cattle at the time of the inspection.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/6b346fc5c8475b4685257c0f00679002!OpenDocument">EPA Awards $65,000 to Pima County to Reduce Water Pollution, Build Resilience to Climate Change</a></strong><br />
+	The U.S. Environmental Protection Agency today announced $65,000 in funds to help Pima County expand its use of green infrastructure to reduce water pollution and boost resilience to the impacts of climate change. The funding will help the county complete a green infrastructure guidance manual. <br />
+	The southern Arizona project is one of six announced today in support of President Obama’s Climate Action Plan, which directs federal agencies to identify climate-resilient investments such as agency grants and technical assistance for communities across the country.  Green infrastructure builds resilience to the impacts of climate change, particularly by reducing the burden on local water infrastructure.</p>
+
+<h2>October 23, 2013</h2>
+
+<p><strong>Kansas and Illinois Pesticide Distributors to Pay Penalties Totaling $96,640 for Distributing Misbranded Pesticides</strong><br />
+	A pesticide producer in Kansas and pesticide registrant in Illinois have agreed to pay civil penalties totaling $96,640 to settle allegations related to their roles in the distribution of misbranded pesticides in violation of the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA).<br />
+	In October 2011, the Missouri Department of Agriculture conducted an inspection of the American Chemical Systems II, Inc. facility located in Springfield, Mo. In January 2012, the Kansas Department of Agriculture conducted an inspection of the American Chemical Systems II, Inc. facility located in Wichita, Kan. The agencies conducted the inspections to determine the FIFRA compliance status of American Chemical Systems II, Inc., a supplemental distributor of Mason Chemical Company.</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>September 2013</h2>
+
+<p><strong>August/September Livestock and Poultry Environmental Learning Center Newsletter</strong><br />
+	The September issue features the webcast on phosphorus bioavailability in dairy cattle. Check out the manure experts database and a playlist of animal mortality FAQ videos. We recap the North American manure Expo and link you to some great resources on nitrates, manure contaminants, climate change, and ecosystem services. It will also find out about dairy apps, a cow power movie, and manure bio security. As always there are great events and interesting links to manure in the news. </p>
+
+<h2>September 27, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/2c13d9628f27d8b485257bf300606b97!OpenDocument">EPA Announces Second Opportunity for Public Comments on Proposed Ban on Boat Sewage Dumping into Lake Erie</a></strong><br />
+	The U.S. Environmental Protection Agency has reaffirmed its initial determination that there are adequate facilities around Lake Erie for boats to pump out their sewage. The determination will allow the establishment of a “no discharge zone” for 593 square miles of the lake, its tributaries and bays, and 84 miles of shoreline that comprise the New York State portion of the lake. The EPA is providing an opportunity for the public to comment on the boat sewage dumping ban for a second time. The EPA initially made a determination in December 2012 that adequate sewage pump out facilities exist and that the state’s proposal to designate areas of Lake Erie as a “no discharge zone” can go forward. The EPA received significant comments questioning the availability of sewage pump-out facilities, particularly for larger vessels, and the EPA conferred with New York State to gather more information. That information gathering is now complete and the EPA is confirming its original opinion that there are adequate facilities.</p>
+
+<h2>September 26, 2013</h2>
+
+<p><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/f6698c374a37c55185257bf2006eb5d8!OpenDocument"><strong>U.S. EPA awards Hawaii $1.1 million to control polluted water runoff </strong></a><br />
+	The U.S. Environmental Protection Agency recently awarded the Hawaii Department of Health a $1.1 million grant to implement its Polluted Runoff Control (PRC) Program and to support water quality improvement projects.<br />
+	“EPA’s grant helps Hawaii reduce harmful stormwater runoff,” said Jared Blumenfeld, EPA’s Regional Administrator for the Pacific Southwest. “Our goal, along with the Department of Health, is to protect coastal waters and coral reefs from the effects of polluted surface water.”</p>
+
+<h2>September 25, 2013</h2>
+
+<p><strong>EPA Opens Fumigant Registration Review Dockets for Public Comment</strong><br />
+	On September 25, 2013, the EPA opened dockets on a number of soil, structural, commodity, and antimicrobial fumigants for a 60-day comment period, making preliminary work plans for each fumigant included in the group and supporting documents that outline anticipated risk assessment and data needs available. These documents will assist the public in understanding the types of information and issues that may be considered during the course of registration review, which is the EPA’s periodic reevaluation of all registered pesticides to ensure that products in the marketplace can still be used safely. The agency is seeking comments on these documents and requesting information on the use parameters, or where and how these fumigants should be used. The comment period closes on November 25, 2013. The agency is using this process to continue the dialogue with stakeholders on label issues that have emerged during the reregistration label implementation process for the soil fumigants and throughout registration review.</p>
+
+<h2>September 23, 2013</h2>
+
+<p><strong>Griffin Bros. Inc. settles with EPA for violating federal pesticide rules in Salem, OR</strong><br />
+	Griffin Bros. Inc. of Salem, Oregon has settled with the U.S. Environmental Protection Agency for violating federal pesticide rules. According to today’s settlement, Griffin Bros. Inc. sold pesticides with improper labels in violation of the Federal Insecticide, Fungicide, and Rodenticide Act. "When companies sell mislabeled pesticides they put people’s health and the environment at risk," said Kelly McFadden, manager of EPA’s pesticides and toxics enforcement program in Seattle. "Without proper labeling and safety instructions, consumers risk misapplying these pesticides."</p>
+
+<h2>September 19, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/0ec67432009037ff85257beb0058694f!OpenDocument">Hancock County, Iowa, Cattle Feeder Agrees to Innovative Settlement for Violating Water Permit </a></strong><br />
+	Branstad Farms, a cattle feedlot in Hancock County, Iowa, has agreed to pay a $5,100 civil penalty and perform a $26,000 Supplemental Environmental Project to settle alleged violations of the facility’s National Pollutant Discharge Elimination System (NPDES) permit.</p>
+
+<h2>September 18, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/e892df28ae53f56f85257bea004f9139!OpenDocument">EPA Administrator Gina McCarthy Testimony Before House Committee on Energy and Commerce’s Subcommittee on Energy and Power</a></strong><br />
+	In June, the President reaffirmed his commitment to reducing carbon pollution when he directed many federal agencies, including the Environmental Protection Agency, to take meaningful steps to mitigate the current and future damage caused by carbon dioxide emissions and to prepare for the anticipated climate changes that have already been set in motion. <br />
+	Climate change is one of the greatest challenges of our time. Based on the evidence, more than 97% of climate scientists are convinced that human caused climate change is occurring. If our changing climate goes unchecked, it will have devastating impacts on the United States and the planet. Reducing carbon pollution is critically important to the protection of Americans’ health and the environment upon which our economy depends.</p>
+
+<h2>September 17, 2013 </h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/752212ca3704b2dd85257be90052a9b2!OpenDocument">EPA Provides Grant for Organic Gardening and Composting Training in Brooklyn; Community Gardens in Bedford-Stuyvesant to Benefit from Program </a></strong><br />
+	The U.S. Environmental Protection Agency has awarded $30,000 to Green Guerillas, a New York City community-based organization, to teach organic gardening skills to a team of Brooklyn young people. The grant was awarded under the EPA’s Environmental Justice Small Grants Program, which supports and empowers communities working on solutions to local environmental and public health issues.</p>
+
+<h2>September 16, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/0644ca9a8a9dd2af85257be800780c15!OpenDocument">California Agencies Seek Dairy Digester Projects -- Proposals Due November 1 </a></strong><br />
+	The California Department of Food and Agriculture, the U.S. Environmental Protection Agency and their partner agencies in the California/Federal Dairy Digester Working Group have announced a joint solicitation for dairy digester concept proposals.</p>
+
+<h2>September 11, 2013 </h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/59ac0a79754c7cfd85257be3006d0324!OpenDocument">Agreement Reached to Improve Iowa’s Concentrated Animal Feeding Operations Permit and Compliance Program </a></strong><br />
+	EPA has reached an agreement with the Iowa Department of Natural Resources (IDNR) to make changes to Iowa’s Clean Water Act (CWA) permit and compliance program for concentrated animal feeding operations (CAFOs). The agreement includes specific actions IDNR intends to take to remedy the program and a timeline for implementation of those actions to ensure clean, healthy water.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/eeffe922a687433c85257359003f5340/08867a69da5cc24385257be30060fbb6!OpenDocument">EPA Provides Grant for Urban Gardening and Green Infrastructure Program in Newark, New Jersey</a></strong><br />
+	The U.S. Environmental Protection Agency has awarded $30,000 to the Ironbound Community Corporation to provide community residents in the Ironbound section of Newark, New Jersey the skills needed to create urban gardens in vacant city lots. The grant was awarded under the EPA’s Environmental Justice Small Grants Program, which supports communities working on solutions to local environmental and public health issues.</p>
+
+<h2>September 6, 2013</h2>
+
+<p><strong>EPA Makes Online Information about Protecting Pets from Fleas and Ticks Easier to Find</strong><br />
+	As a part of the Agency's effort to build a more user-friendly website, EPA has redesigned its online information about protecting pets from fleas and ticks to make it simpler for visitors to find the information they need quickly and easily. The Agency has reformatted the content using various tools to allow readers to scan content quickly. Additionally, these resources are now easier to read on mobile devices. Visit the Protecting Pets from Fleas and Ticks Resource Directory at <a href="../node/18131.html">http://www2.epa.gov/pets.</a></p>
+
+<h2>September 5, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/7140e1103064582a85257bdd004a1580!OpenDocument">EPA Launches New Online Mapping Tool for Environmental Impact Statements</a></strong><br />
+	Today, the Environmental Protection Agency (EPA) launched an interactive web-based mapping tool that provides the public with access and information on Environmental Impact Statements (EIS) filed with EPA for major projects proposed on federal lands and other proposed federal actions. When visiting the website, users can click on any state for a list of EISs, including information about the potential environmental, social and economic impacts of these projects.</p>
+
+<h2><strong>September 3, 2013</strong></h2>
+
+<p><strong>SFIREG Full Committee; Notice of Public Meeting </strong><br />
+	The Association of American Pesticide Control Officials (AAPCO)/State FIFRA Issues Research and Evaluation Group (SFIREG), Pesticide Operations and Management (POM) Committee will hold a 2-day meeting, beginning on September 16, 2013, and ending September 17, 2013. This notice announces the location and times for the meeting and sets forth the tentative agenda topics. <strong>DATES:</strong> The meeting will be held on Monday, September 16, 2013, from 8:30 a.m. to 5 p.m. and 8:30 a.m. to noon on Tuesday, September 17, 2013.</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>August 30, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/a15398fb5fc51da185257bd7006f1a64!OpenDocument">EPA, OSHA and ATF Provide Information and Lessons Learned About the Safe Storage, Handling and Management of Ammonium Nitrate </a></strong><br />
+	Today the U.S. Environmental Protection Agency (EPA), the Occupational Safety and Health Administration (OSHA) and the Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF) issued a chemical advisory that provides information on the hazards of ammonium nitrate (AN) storage, handling and management. This action supports the goals of President Obama's August 2013 executive order on "Improving Chemical Facility Safety and Security." The advisory provides lessons learned for facility owners and operators, emergency planners and first responders from recent incidents, including the explosion in West, Texas, involving AN in order to prevent similar incidents.</p>
+
+<h2>August 27, 2013</h2>
+
+<p><strong>EPA Proposes Registration of Nanosilver Pesticide Product</strong><br />
+	On August 27, 2013, the EPA announced a proposed decision to register a nanosilver-containing antimicrobial pesticide product named "Nanosilva." This silver-based product is used as a non-food-contact preservative to protect plastics and textiles (e.g., in household items, electronics, sports gear, hospital equipment, bathroom fixtures and accessories) from odor and stain causing bacteria, fungi, mold and mildew. The EPA evaluated the exposure to nanosilver from Nanosilva using data showing that plastics and textiles treated with the product released, at most, exceedingly small amounts of silver. The EPA reviewed other information on the product submitted by the applicant. We also used data from the scientific literature to evaluate the hazard of nanosilver. Based on this evaluation, the agency determined that Nanosilva will not cause unreasonable adverse effects on people, including children, or the environment. As a condition of registration, the EPA is requiring the company to generate additional data, for example, to confirm the agency's understanding of the size of nanosilver particles in the product.</p>
+
+<p><strong>Family Dollar, Inc., Pays $602,438 Penalty for Distribution of Misbranded Pesticides </strong><br />
+	Family Dollar, Inc., headquartered in Matthews, NC, has paid a $602,438 civil penalty to the United States to resolve alleged violations of the Federal Insecticide, Fungicide and Rodenticide Act (FIFRA) for misbranded pesticides.<br />
+	The penalty stems from the sale or distribution of two misbranded or mislabeled antimicrobial bleach products on numerous occasions. The labels for the bleach products were not identical to the EPA approved label. Labels must be identical to the EPA approved label and may not have any additions or omit any label language as required by FIFRA. </p>
+
+<h2>August 26, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/c18d045d29be1cc385257bd3005f3892!OpenDocument">Local and Industrial Emergency Planners Recognized for Chemical Emergency Planning Achievements throughout EPA Region 7 </a></strong><br />
+	Awards were presented to local emergency planning committees and industries for their outstanding achievements in planning for chemical emergencies at an Emergency Planning and Preparedness Conference July 25-27, 2013, in Overland Park, Kan. The conference was hosted by EPA Region 7, FEMA Region 7 and the International Association of Fire Chiefs.<br />
+	Steve Taylor, executive director of the Missouri Agribusiness Association, served on a panel about fertilizer safety with EPA Region 7 staff. His main focus was the role of agricultural retailers and local emergency responders in preventing and reducing the risk from chemical accidents such as anhydrous ammonia releases.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/6427a6b7538955c585257359003f0230/dce1af75d234eaac85257bd3005df1c2!OpenDocument&amp;Start=5&amp;Count=5&amp;Expand=5">EPA Releases New Climate Change Video Series</a></strong><br />
+	The U.S. Environmental Protection Agency (EPA) today released a new series of short public service videos on climate change. The videos cover a range of topics related to climate change, including its causes and impacts, actions Americans can take to reduce their impact, and the benefits to the economy of addressing climate change. The new video series supports the President's Climate Action Plan by encouraging American families to reduce the amount of energy they consume, cutting down on their utility bills and protecting people's health.</p>
+
+<h2>August 21, 2013</h2>
+
+<p><strong>Update of Human Health Benchmarks for Pesticides in Water</strong><br />
+	The EPA has updated its list of human health benchmarks for pesticides. The EPA develops these benchmarks as screening levels for use by states and water systems in determining whether the detection of a pesticide in drinking water or a drinking water source may indicate a potential health risk. This year, the EPA added 11 new benchmarks to the list, revised 10 of the benchmarks published in 2012 to reflect new scientific information and added cancer effects benchmarks for 40 of the pesticides. To view the revised list of human health benchmarks for pesticides, visit <a href="https://iaspub.epa.gov/apex/pesticides/f?p=HHBP:home">www.epa.gov/pesticides/hhbp</a>.</p>
+
+<h2>August 19, 2013</h2>
+
+<p><strong>Companies in Illinois, Nebraska to Pay Settlements Totaling $84,387 for Distribution of Misbranded or Mislabeled Pesticides</strong><br />
+	An Illinois pesticide manufacturer and a Nebraska company that sold some of its fly control products have agreed to pay civil penalties totaling $84,387 to EPA to settle allegations related to their roles in the distribution or sale of misbranded pesticides.<br />
+	In separate administrative settlement agreements filed by EPA Region 7 in Lenexa, Kan.:</p>
+
+<ul><li>Wellmark International, Inc., of Schaumburg, Ill., has agreed to pay a $44,704 civil penalty to resolve 19 violations of the Federal Insecticide, Fungicide and Rodenticide Act (FIFRA) related to the Nebraska company's distribution of its RF2025 Tub and RF2002 Block products from 2009 to 2011.</li>
+	<li>Vitalix, Inc., of Alliance, Neb., has agreed to pay a $39,683 civil penalty to resolve 19 violations of FIFRA related to its sales of the RF2025 Tub misbranded as #5 Altosid IGR Fly Tub, and of the RF2002 Block product misbranded as Mineralix Fly Tub with Altosid IGR#11.</li>
+</ul><p>EPA alleged that the two fly control products were either misbranded with labels that did not include required cautionary language, or were distributed in conjunction with claims that differed from the pesticide registration information filed with EPA.</p>
+
+<h2>August 15, 2013</h2>
+
+<p><strong>New Pesticide Labels Will Better Protect Bees and Other Pollinators </strong><br />
+	In an ongoing effort to protect bees and other pollinators, the U.S. Environmental Protection Agency (EPA) has developed new pesticide labels that prohibit use of some neonicotinoid pesticide products where bees are present. "Multiple factors play a role in bee colony declines, including pesticides. The Environmental Protection Agency is taking action to protect bees from pesticide exposure and these label changes will further our efforts," said Jim Jones, assistant administrator for the Office of Chemical Safety and Pollution Prevention.</p>
+
+<p><strong>EPA Requests Applications for the National Pesticide Information Center Cooperative Agreement</strong><br />
+	The EPA's Office of Pesticide Programs is announcing the availability of funds and soliciting applications for a cooperative agreement to support the National Pesticide Information Center (NPIC). Updates to the NPIC Request for Applications are available in the RFA Amendment.<br />
+	Through this longstanding partnership program, a grantee provides objective, science-based information on a wide variety of pesticide-related subjects to anyone within the United States and its territories and supports public health surveillance of pesticide exposures.</p>
+
+<p><strong>FIFRA Scientific Advisory Panel; Notice of Public Meeting</strong><br />
+	There will be a 1-day meeting of the Federal Insecticide, Fungicide, and Rodenticide Act Scientific Advisory Panel (FIFRA SAP) to consider and review RNAi Technology as a Pesticide: Problem Formulation for Human Health and Ecological Risk Assessment.<br />
+	DATES: The meeting will be held on October 29, 2013, from 9 a.m. to approximately 6 p.m.</p>
+
+<h2>August 13, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/0e514159ae8ec86c85257bc6006a25cf!OpenDocument">THURSDAY: EPA Chief Gina McCarthy to Deliver Remarks at Iowa Farm Environmental Leader Awards Luncheon in Des Moines </a></strong><br />
+	EPA Administrator Gina McCarthy will be in Des Moines, Iowa, on Thursday, August 15, to speak with farmers at the Iowa Farm Environmental Leader Awards ceremony at the Iowa State Fairgrounds.<br />
+	Administrator McCarthy will discuss EPA's role in rural America and the Agency's partnership with the agricultural community to protect our water, land, and air. She will also highlight EPA's commitment to carrying out President Obama's Climate Action Plan to reduce carbon pollution, and the new environmental challenges that agriculture and rural communities face. During her visit, McCarthy will also meet with farmers and other members of the agricultural community.</p>
+
+<h2>August 9, 2013</h2>
+
+<p><strong>Updated Label Review Manual Chapter on Pesticide Storage and Disposal Available</strong><br />
+	The Office of Pesticide Programs' Labeling Consistency Committee has completed revisions and updates to Chapter 13 of the Label Review Manual. The Label Review Manual provides guidance to both EPA reviewers and the pesticide industry on what is required and recommended for each part of a pesticide product label in order for the agency to approve the label. This chapter, dealing with storage and disposal statements on labels, has been updated to clearly reflect the requirements of the 2006 "container-containment" rule, which specified improvements to storage and disposal practices. Prior to revising the chapter, the committee collected comments from the public - primarily the pesticide industry - and state regulators. The revised chapter is posted on our website. Four chapters remain to be edited before this phase of updating the 18-chapter LRM is complete.</p>
+
+<h2>August 6, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/02592be566ba346685257bbf005a7db2!OpenDocument">EPA Finalizes 2013 Renewable Fuel Standards to Help Promote American Energy Independence, Reduce Carbon Pollution/EPA also announces steps to address concerns about the E10 blend wall </a></strong><br />
+	As part of an ongoing effort to enhance energy security and reduce carbon pollution, the U.S. Environmental Protection Agency (EPA) today finalized the 2013 percentage standards for four fuel categories that are part of the Renewable Fuel Standard (RFS) program established by Congress. Most of these fuels are produced by American farmers and growers domestically and help reduce the carbon pollution that contributes to climate change.</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>July 2013</h2>
+
+<p><strong>July 2013 Newsletter Livestock and Poultry Environmental Learning Center </strong><br />
+	The July<strong> </strong>issue highlights a webcast on a monoslope barn air quality project<strong>. </strong>New LPELC web content on manure-to-energy, animal mortality curriculum, animal ag and climate change course, and a manure expert database. The national resources area includes a new tool to allow farmers to estimate how much carbon could be sequestered by various conservation activities as well as a publication on drug residue research in animal mortality compost, and much more. The hot topics area reports on a project that studied antibiotic-resistant bacteria in farm workers, asphalt, and conservation trade-offs. </p>
+
+<h2>July 31, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0/a38b17b5643e001d85257bb9005882da?OpenDocument">EPA Proposes Rule to Modernize Clean Water Act Reporting / E-reporting initiative will increase efficiency, ease burden for states and improve public access to data</a></strong><br />
+	The U.S. Environmental Protection Agency (EPA) has proposed a rule that would modernize Clean Water Act (CWA) reporting processes for hundreds of thousands of municipalities, industries, and other facilities by converting to an electronic data reporting system. The proposed e-reporting rule would make facility-specific information, such as inspection and enforcement history, pollutant monitoring results, and other data required by permits accessible to the public through EPA's website.</p>
+
+<p><strong>Billerica, Mass. Company to Pay $2.6+ Million for Alleged Pesticide Violations</strong><br />
+	EMD Millipore Corporation, of Billerica, Mass., has agreed to pay $2,681,500 in civil penalties to settle EPA allegations that it violated the federal pesticide law and regulations on numerous instances over many years.<br />
+	In a Consent Agreement and Final Order (CAFO), EPA alleged that EMD Millipore Corp. violated the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA) on numerous occasions since 2008 by producing, importing, distributing and selling pesticidal devices in violation of federal pesticide requirements. The devices were used in laboratories for research, development and manufacturing purposes. Although the allegations of noncompliance were serious and involved numerous violations over years, EPA is not aware of any specific human health or environmental harm caused by the violations in this case.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/8bf559a86a65768585257bb900680bb4!OpenDocument">STATEMENTS: Senior EPA Officials Pay Tribute to Ira Leighton, who Helped Shape Environmental Protection since 1972 </a></strong><br />
+	EPA officials made the following statements regarding the passing, on July 26, 2013, of Ira W. Leighton, of Holliston, Mass., Deputy Regional Administrator of US EPA Region 1:<br /><strong>EPA Administrator Gina McCarthy</strong>:<br />
+	"During his 41 years of public service, Ira Leighton was truly a force for environmental protection and an institution within EPA. Ira was innovative, practical, and results-oriented, and his dedication and leadership were crucial to many Agency initiatives. He improved the quality of life for millions of people across the country."</p>
+
+<h2>July 26, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/a81724c7510f9d8985257bb400593c36!OpenDocument">TUESDAY: Newly Confirmed EPA Chief Gina McCarthy to Deliver Remarks at Harvard Law School</a></strong><br />
+	On Tuesday, newly-confirmed U.S. Environmental Protection Agency Administrator Gina McCarthy will be in Cambridge, MA to deliver remarks at Harvard Law School. This will be her first public speech since being confirmed as EPA Administrator by the U.S. Senate. McCarthy will discuss her vision for the EPA and challenges the Agency will face going forward. She will also highlight her commitment to carrying out President Obama's Climate Action Plan to reduce carbon pollution and address the impacts of climate change.</p>
+
+<h2>July 24, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/c1c3c132ea1993a085257bb2005d596b!OpenDocument">EPA Expands List of Safer Chemical Ingredients</a></strong><br />
+	The U.S. Environmental Protection Agency's (EPA) today added more than 130 chemicals to its Safer Chemical Ingredients List. For the first time, 119 fragrance chemicals for commercial and consumer cleaning products have been added to the list.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/4dc74e69023f3ccf85257bb2005558e8!OpenDocument">EPA Software Helps Reduce Water Pollution as Part of President's Climate Action Plan / National stormwater calculator helps manage stormwater runoff</a></strong><br />
+	As part of President Obama's Climate Action Plan, the U.S. Environmental Protection Agency (EPA) today released the National Stormwater Calculator, an innovative addition to the administration's virtual climate resilience toolkit. EPA's new calculator will help property owners, developers, landscapers, and urban planners make informed land-use decisions to protect local waterways from pollution caused by stormwater runoff. Preventing stormwater runoff, which can impact drinking water resources and local ecosystems, protects people's health and the environment.</p>
+
+<h2>July 23, 2013</h2>
+
+<p><strong>Coming Soon: The EPA Federal Certification Plan – a Mechanism to Certify Applicators of Restricted Use Pesticides within Indian Country </strong><br />
+	Later this year, the EPA will release the<em> EPA Plan for the Federal Certification of Applicators of Restricted Use Pesticides (RUPs) within Indian Country</em>. The EPA is taking this step to make RUPs available for use in Indian country where no current certification mechanisms exist. This action will give pesticide applicators who apply or seek to apply in Indian country access to the same pest control tools available elsewhere in the United States and ensure that these applicators have met competency standards.</p>
+
+<h2>July 12, 2013</h2>
+
+<p><strong>Pesticide News Story: Register for EPA-hosted Webinar on School Integrated Pest Management, Healthier School Environments</strong><br />
+	On Tuesday, July 23, from 3pm to 4pm EDT, the EPA will host a webinar on School Integrated Pest Management (IPM) as part of the Agency's Sensible Steps to Healthier School Environments webinar series. The webinar, titled Integrated Pest Management (IPM): Protecting Kids from Pests and Pesticides, will cover areas such as the basics of school IPM, and cost-effective ways to implement school IPM. This webinar is intended for school staff such as facility managers, custodial staff, district administrators, principals, and school board members.</p>
+
+<h2>July 11, 2013</h2>
+
+<p><strong><a href="https://www.gpo.gov/fdsys/pkg/FR-2013-07-11/html/2013-16660.htm">August 8, 2013: Farm, Ranch, and Rural Communities Federal Advisory Committee (FRRCC) Teleconference</a></strong><br />
+	Under the Federal Advisory Committee Act, Public Law 92-463, EPA gives notice of a teleconference meeting of the Farm, Ranch, and Rural Communities Committee (FRRCC). The FRRCC is a policy-oriented committee that provides policy advice, information, and recommendations to the EPA Administrator on a range of environmental issues and policies that are of importance to agriculture and rural communities.<br /><strong>Purpose of Meeting:</strong> The purpose of this teleconference is to discuss specific topics of relevance for consideration by the Committee in order to provide advice and insights to the Agency on environmental policies and programs that affect and engage agriculture and rural communities.<br /><strong>DATES</strong>: The Farm, Ranch, and Rural Communities Committee will hold a public teleconference on August 8, 2013 from 1:00 p.m. until 3:00 p.m. Eastern Standard Time.<br /><strong>ADDRESSES</strong>: The meeting will be held at the U.S. EPA East Building, 1201 Constitution Avenue NW., Room 1132, Washington, DC 20004.</p>
+
+<p><strong>Nature's Best, LLC, to Pay $19,669 Civil Penalty for Violations of the Federal Insecticide, Fungicide, and Rodenticide Act</strong><br />
+	Nature's Best, LLC, of Inwood, Iowa, has agreed to pay a $19,669 civil penalty to resolve violations of the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA).<br />
+	The penalty stems from 20 alleged sales or distributions of 18 different unregistered pesticide products, including plant regulators, insecticides, and fungicides, and one count for production of pesticides in a facility that was not registered with EPA as a pesticide-producing establishment from 2010 to 2012. Among other products, the matter involved the sale and distribution of plant growth regulators, which FIFRA regulates as pesticides.</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>June 2013</h2>
+
+<p><strong>June 2013 Newsletter Livestock and Poultry Environmental Learning Center </strong><br />
+	The June issue looks at upcoming webcasts on monoslope barns and phosphorus bioavailability. Also check out a new online course on animal ag and climate change, the Waste to Worth <a href="http://articles.extension.org/pages/68250/proceedings-from-waste-to-worth-spreading-science-and-solutions-2013">proceedings hub,</a> and grid sampling. The air quality section of the site recently was awarded a Blue Ribbon from ASABE. Check out the national resources area for information on national water grants, dairy sustainability, and USDA's climate vision. The hot topics this month are on fly larva as feed and foaming manure pits. As always there are highlights from state programs and events &amp; announcements.</p>
+
+<p><a href="https://www.rti.org/pubs/cleaneast_main_report_december_2012.pdf"><strong>Comprehensive Livestock Environmental Assessment and Nutrient Management Plan Project (CLEAN-East Project) Report and Video Are Now Available</strong></a><br />
+	The CLEAN-East project is a cooperative agreement awarded by EPA to RTI International in 2007.  The cooperative agreement was awarded to develop and deploy Technical Assistance Professionals (TAPs) to assist owners and operators of beef, dairy, poultry, swine, and other livestock operations with EAs and the development of Nutrient Management Plans (NMPs)<br />
+	Last December, RTI International (with sub-agreement recipient North Carolina State University) completed a report on nutrient management planning and environment assessment services to more than 400 animal feeding operations in the eastern U.S.  The report contains summary information and statistics about findings, descriptions of tools developed and a case study analysis of farms in the Chesapeake Bay watershed.  The project covers the 27 states located east of the Mississippi River.  In addition, a video was produced about the performance of the project with interviews of two farm operators who participated. </p>
+
+<div>Click <a href="https://www.rti.org/pubs/cleaneast_main_report_december_2012.pdf">here</a> for a link to the report. <a class="exit-disclaimer" href="../web-policies-and-procedures/exit-epa.html" title="EPA's External Link Disclaimer">Exit</a></div>
+
+<h2>June 26, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/fa0682a34fc6c06385257b96006174b6!OpenDocument">Connecticut Organizations and Residents Receive Prestigious EPA Environmental Award</a></strong><br />
+	Seven organizations and individuals in Connecticut were honored today at the 2013 Environmental Merit Awards ceremony of the US Environmental Protection Agency. They were among 28 recipients across New England recognized for their significant contributions to environmental awareness and problem-solving.</p>
+
+<h2>June 24, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Solicits Public Review and Comment on Draft Information Collection Request for Tier 2 Data for Pesticide Chemicals for Endocrine Disruptor Screening </strong><br />
+	The U.S. Environmental Protection Agency (EPA) is initiating a 60-day public review and comment on a draft Information Collection Request (ICR) for collecting Tier 2 test data for a subset of pesticides (referred to by the Agency as List 1 chemicals) that have the potential to interact with the endocrine system. The ICR estimates the paperwork burden imposed by requesting data on these chemicals.</p>
+
+<h2>June 21, 2013</h2>
+
+<p><strong>Pesticide Program Dialogue Committee to Meet July 10-11, 2013</strong><br />
+	EPA's Office of Pesticide Programs (OPP) will hold a public meeting of the Pesticide Program Dialogue Committee (PPDC) on Wednesday, July 10, from 1:00pm to 5:00 pm, and Thursday, July 11, from 9:00 am to 4:00 pm. The meeting will be held in EPA's first floor conference center at One Potomac Yard, 2777 South Crystal Drive, Arlington, VA 22202.  Information is available on the <a href="../node/53137.html">PPDC web site</a>. All meetings are free, open to the public, and no advance registration is required. </p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/7a29795fce71e35285257b910080fbd7!OpenDocument">W/T Land and Cattle settles with EPA for water pollution violations</a></strong><br />
+	W/T Land &amp; Cattle, Inc., has reached a $42,000 settlement with the U.S. Environmental Protection Agency (EPA) for discharging pollutants to the Boise River without a Clean Water Act permit. W/T Land &amp; Cattle is a cattle feedlot located on the banks of the Boise River near Notus, Idaho. In 2011, EPA received numerous local complaints that the facility was flooded with water from the Boise River. Later, inspection results and other information showed W/T Land &amp; Cattle had been discharging pollution to the Boise River during and after flood events. As flood water receded, the feedlot waste in the water moved through the sandy soil and a permeable berm to reach the river.</p>
+
+<h2>June 18, 2013</h2>
+
+<p><strong>EPA Launches New FIFRA Section 18 Emergency Exemption Online Training Resource </strong><br />
+	The EPA is announcing a new online training resource for the Section 18 Emergency Exemption Program under the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA). Section 18 of FIFRA authorizes the EPA to allow an unregistered use of a pesticide for a limited time if we determine that an emergency condition exists and risks from the proposed use are acceptable.<br />
+	The primary goal of this online resource is to assist state and federal agencies in determining situations where it is appropriate to request a section 18 emergency exemption and, when doing so, how to submit a complete and accurate application to facilitate a timely and effective review by the EPA.</p>
+
+<h2>June 14, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Makes Available Information Collection Request for Revised Second List of Chemicals for Endocrine Disruptor Screening</strong><br /><span>The U.S. Environmental Protection Agency (EPA) is initiating a 30-day public review and sending to the Office of Management and Budget (OMB) the Information Collection Request (ICR) for collecting data for a second list of chemicals that will be screened for their potential to interact with the endocrine systems of humans and wildlife. Concurrently, the EPA is making available the list of chemicals covered by the ICR and related policies and procedures for collecting data. The ICR estimates the burden imposed by requesting data on these chemicals.</span></p>
+
+<p><strong>Pesticide News Story: EPA Solicits School Integrated Pest Management (IPM) Grant Proposals for 2013</strong><br /><span>The EPA's Office of Pesticide Programs is soliciting proposals for new School IPM assistance agreements for projects that further the implementation of verifiable IPM in and around the nation's public and tribal schools. The total amount available will be $700,000, and the Agency anticipates funding approximately three projects, primarily as cooperative agreements, with a maximum funding level of $250,000 per project.</span></p>
+
+<h2>June 7, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/c38abbc4c09bc77d85257b87006c2af5!OpenDocument">Monsanto Company receives First Place Gulf Guardian Award in the Business/Industry Category</a></strong><br />
+	The Gulf of Mexico Program recently announced the Monsanto Company will receive a<span> </span>First Place 2013 Gulf Guardian Award in the Business/Industry Category for their Mississippi Watershed Project. The awards ceremony will be held on June 26, 2013, at the Tampa Bay Grand Hyatt beginning at 6PM.<br />
+	The Monsanto Mississippi River Project engaged four NGOs (Audubon Society, Delta Wildlife, Iowa Soybean Association, and The Nature Conservancy) to advance conservation efforts that are reducing sediment and nutrients flowing to the Gulf of Mexico. The partnership effort was used to leverage conservation investments throughout the project area which are producing significant and quantifiable improvements in water quality, while creating and improving habitat for many species of fish and wildlife. With this project, Monsanto has set the bar for agribusiness conservation investments in the Mississippi River Basin.</p>
+
+<h2>June 6, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Announces New Guidance and Policies for an Integrated Approach to Pesticide Testing and Assessment</strong><br />
+	Strategic Direction for New Pesticide Testing and Assessment Approaches." The EPA is developing and evaluating new technologies in molecular, cellular and computational sciences to supplement or replace more traditional methods of toxicity testing and risk assessment. This document creates a framework for hypothesis-based, systematic integration of exposure and hazard information to assess pesticide risk. OPP's strategic direction is consistent with the 2007 and 2009 National Research Council reports, "Toxicity Testing in the 21st Century: A Vision and a Strategy" and "Science and Decisions: Advancing Risk Assessment." These actions are significant milestones toward the agency's longer term vision for a paradigm shift to 21st Century science.</p>
+
+<h2>June 4, 2013</h2>
+
+<p><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/aa133ad0d89c8dc185257b80004f755a!OpenDocument"><strong>EPA and USDA Join Together To Help Americans Reduce Wasted Food</strong></a><br />
+	Today EPA Acting Administrator Bob Perciasepe joined U.S. Department of Agriculture Secretary Tom Vilsack to announce the launch of a challenge that asks farmers, processors, manufacturers, retailers, communities and government agencies to reduce wasted food. The U.S. Food Waste Challenge builds upon the success of EPA's Food Recovery Challenge to help more Americans do their part to reduce food waste.</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>May 2013</h2>
+
+<p><strong>Newsletter Livestock and Poultry Environmental Learning Center </strong><br />
+	The May issue looks at upcoming webcasts on monoslope barns and carbon sequestration. We also introduce new materials on small-scale poultry, small-scale sheep &amp; goat production, and nutrient transformation of digested manure. The winners of the Waste to Worth student poster contest were also announced. We also include a short post in memory of Dr. Dick Hegg, who passed away April 1, 2013. Many of the national resources discuss grid sampling and phosphorus management. Hot topics revolve largely around climate change. As always, check out the events, announcements, and "manure in the news" to stay current on what is going on in the world of manure management. </p>
+
+<p><strong><a href="http://water.epa.gov/polwaste/nps/outreach/upload/94issue.pdf">May 2013 <strong>#94</strong></a><a href="http://water.epa.gov/polwaste/nps/outreach/upload/94issue.pdf"> Nonpoint Source News-Notes </a></strong><br />
+	This issue of Nonpoint Source News-Notes explores new and innovative programs, tools and resources that are available to help manage polluted runoff.</p>
+
+<h2>May 29, 2013</h2>
+
+<p><strong>Farm Services Cooperative, of Shelby, Iowa, to Pay $21,450 Civil Penalty for Sale of Restricted Use Pesticides</strong><br />
+	Farm Services Cooperative, of Shelby, Iowa, has agreed to pay a $21,450 civil penalty to the United States for the unauthorized sales of restricted use pesticides. According to an administrative consent agreement filed by EPA Region 7 in Lenexa, Kan., Farm Services Cooperative on three occasions sold restricted use pesticides to an individual that was not certified to apply such pesticides, violating the Federal Insecticide, Fungicide and Rodenticide Act (FIFRA).</p>
+
+<p><strong>Pesticide News Story: EPA Makes Emergency Exempted and Special Local Needs Pesticide Products Available in Indian Country Nationwide</strong><br />
+	On Tuesday, May 21, 2013, Acting Administrator Bob Perciasepe finalized a program to allow growers in Indian country nationwide to use certain registered pesticide products not currently available for use in Indian country to combat pests in emergency situations or when there is a special local need. Under federal pesticide law, tribes and farmers in Indian country do not explicitly have access to the benefits of pesticide emergency exemptions or special local needs registrations (state-specific registrations). Pest control products permitted under these circumstances may be especially useful when growers in a particular region identify a pest problem that federally registered products do not currently alleviate. Lack of availability of these products denies access for growers and public health officials in Indian country to the same pest control tools that are available elsewhere in the United States.</p>
+
+<h2>May 21, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/4a3d7e51caf96c7a85257359003f533e/b13352aa326ee16285257b72004a77b5!OpenDocument">EPA Advises Facility Operators to Minimize Releases during Hazardous Weather Events </a></strong><br />
+	As hurricane season approaches, U.S. Environmental Protection Agency (EPA) is issuing a Hazardous Weather Release Prevention and Reporting alert to remind facility operators of certain regulations that require minimization of chemical releases during process shutdown operations. This alert is designed to increase awareness among facility operators about their obligation to operate facilities safely and report chemical releases in a timely manner. <br />
+	The alert specifies operational release minimization requirements and clarifies reporting requirements, including exemptions. Unlike some natural disasters, the onset of a hurricane is predictable and allows for early preparations to lessen its effect on a facility. Before hurricane force winds and associated storm surge flooding damage industrial processes, the alert recommends that operators take preventive action by safely shutting down processes, or otherwise operate safely under emergency procedures.<span> </span></p>
+
+<h2>May 15, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Solicits Regional Agriculture IPM Grants Proposals for 2013</strong><br />
+	The EPA's Office of Pesticide Programs is soliciting proposals for new Regional Agricultural IPM Grants totaling $422,000 for projects that support Integrated Pest Management approaches to reduce pesticide risk in agriculture. The agency anticipates funding approximately three projects, with a maximum funding level of $170,000 per project.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/4a3d7e51caf96c7a85257359003f533e/2f61bb7f2938847c85257b6d004e0d43!OpenDocument">EPA Acting Administrator Bob Perciasepe, Testimony Before the House Energy and Commerce Committee</a></strong><br />
+	Chairmen Shimkus and Whitfield, Ranking Members Rush and Tonko, and members of the Committee, thank you for the opportunity to appear before you to discuss the Environmental Protection Agency's proposed Fiscal Year 2014 budget.<br />
+	The President's Fiscal Year 2014 Budget demonstrates that we can make critical investments to strengthen the middle class, create jobs, and grow the economy while continuing to cut the deficit in a balanced way. EPA's budget request of $8.153 billion for the 2014 fiscal year reflects our ongoing efforts to change the way EPA does business –to invest in more efficient ways for the Agency to operate, to further reduce costs wherever possible all while we preserve and enhance our ability to carry out the Agency's core mission to protect human health and the environment.</p>
+
+<h2>May 8, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Updates Data Requirements for Registration of Antimicrobial Pesticides</strong><br />
+	The EPA has published in the Federal Register a final rule to revise and update use patterns and data requirements for antimicrobial pesticides. The agency is codifying in part 158 subpart W of Title 40 of the Code of Federal Regulations (CFR) the data requirements for registering antimicrobial products.<br />
+	Pesticide products must get pre-market approval.  Robust, mandatory environmental health and safety testing is required before these products can be sold.  Data requirements for pesticides used in agriculture and other pesticides were already updated in 2007. Now with this regulation, data requirements will be updated for antimicrobial pesticides to meet evolving science and ensure pesticide risk management decisions are founded on the best available sound science.</p>
+
+<h2>May 6, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Releases Assessment of PCNB Bioaccumulation and Long Range Transport Potential</strong><br /><span>The EPA is releasing an assessment of the potential for bioaccumulation and long-range transport of the organochlorine fungicide pentachloronitrobenzene (PCNB) and its degradates and contaminants. This assessment, titled, <a href="https://www.regulations.gov/#!documentDetail;D=EPA-HQ-OPP-2004-0202-0265">2008 Science Advisory Panel Meeting Follow-Up: Assessment of the Bioaccumulation and Long-Range Transport Potential (LRTP) and[sic] of Pentachloronitrobenzene (PCNB) and Associated Ecological Risks</a> (March 2010), incorporates many of the recommendations of the FIFRA Scientific Advisory Panel that met in October 2008 on approaches for evaluating pesticides characterized as persistent, bioaccumulative and toxic.</span></p>
+
+<p><strong>Pesticide News Story: The EPA's Final Decision on the New Active Ingredient Sulfoxaflor</strong><br /><span>The EPA has granted unconditional registrations for the new active ingredient sulfoxaflor, formulated as a manufacturing use product and two end-use products for use in production agriculture. The EPA is granting the use of sulfoxaflor on barley, bulb vegetables, canola, citrus, cotton, cucurbit vegetables, fruiting vegetables, leafy vegetables, low-growing berries, okra, ornamentals (herbaceous and woody), pistachio, pome fruits, root and tuber vegetables, small vine climbing fruit (except fuzzy kiwifruit), soybean, stone fruit, succulent, edible podded and dry beans, tree nuts, triticale, turfgrass, watercress and wheat. </span></p>
+
+<h2>May 2, 2013</h2>
+
+<p><strong>USDA and EPA Release New Report on Honey Bee Health</strong><br />
+	In October 2012, a National Stakeholders Conference on Honey Bee Health, led by federal researchers and managers, along with Pennsylvania State University, was convened to synthesize the current state of knowledge regarding the primary factors that scientists believe have the greatest impact on managed bee health.<br />
+	Those involved in developing the report include USDA's Office of Pest Management Policy (OPMP), National Institute of Food and Agriculture (NIFA), Agricultural Research Services (ARS), Animal and Plant Health Inspection Service (APHIS), National Resource Conversation Service (NRCS) as well as the EPA and Pennsylvania State University. The report will provide important input to the Colony Collapse Disorder Steering Committee, led by the USDA, EPA and the National Agricultural Statistics Service (NASS).<br />
+	To view the report, which represents the consensus of the scientific community studying honey bees, please visit: <a href="http://www.usda.gov/documents/ReportHoneyBeeHealth.pdf">http://www.usda.gov/documents/ReportHoneyBeeHealth.pdf</a></p>
+
+<p><strong>Pesticide News Story: Comment Period Open on NMFS' Draft Measures to Protect Threatened and Endangered Pacific Salmon</strong><br />
+	The EPA is seeking comments by May 31, 2013, on draft Reasonable and Prudent Measures (RPMs) and Alternatives (RPAs) included in a <a href="https://www.regulations.gov/#!documentDetail;D=EPA-HQ-OPP-2008-0654-0516">draft Biological Opinion</a> that the agency received from the National Marine Fisheries Service (NMFS) on May 1, 2013. This draft Biological Opinion addresses the potential effects from three pesticides to Pacific salmon and steelhead listed as endangered or threatened under the Endangered Species Act. The three pesticides are: propargite, fenbutatin oxide and diflubenzuron.</p>
+
+<h2>May 1, 2013</h2>
+
+<p><strong>MEDIA ADVISORY: USDA, EPA and Stakeholders to Discuss New Report on Honey Bee Health</strong><br />
+	Kathleen Merrigan, Deputy Secretary of the U.S. Department of Agriculture (USDA) and Bob Perciasepe, Acting Administrator of the U.S. Environmental Protection Agency (EPA), alongside top scientists and stakeholders, will host a conference call tomorrow to discuss a new report on the factors contributing to decline in honey bee health in the United States. The report summarizes the latest science and emerging research on honey bee health, as discussed at The National Stakeholder Conference on Honey Bee Health in October 2012.<br />
+	The new report shows that honey bee decline is the result of multiple factors, including parasites and disease, genetics, poor nutrition and pesticide exposure.</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>April 30, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Recognizes National Healthy Schools Day; Encourages School Integrated Pest Management </strong><br />
+	Protecting children's health where they live, learn, and play is a top priority for the EPA. Children in the United States continue to face risks arising from exposure to pests and pesticides in school settings.<br />
+	April 30, 2013, is National Healthy Schools Day, a day dedicated to promoting healthy school environments for children. Healthy Schools Day is coordinated by Healthy Schools Network, Inc.  in cooperation with the EPA to promote EPA's environmental health guidelines and children's health.</p>
+
+<p><strong>Pesticide News Story: NAS Report on Ecological Risk Assessment for Endangered and Threatened Species under FIFRA and ESA Now Available</strong><br />
+	The U.S. Environmental Protection Agency, along with the U.S. Department of Agriculture (USDA), the U.S. Fish and Wildlife Service (FWS), and the National Marine Fisheries Service (NMFS), is announcing the availability of a report developed by the National Academy of Sciences' National Research Council outlining recommendations on specific scientific and technical issues related to the development of endangered and threatened species risk assessments for pesticides that are compliant with the Endangered Species Act (ESA) and the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA). The EPA, USDA, FWS and NMFS asked the NRC to consider a range of scientific and technical issues including:</p>
+
+<ul><li>identifying best available scientific data and information;</li>
+	<li>considering sub-lethal, indirect and cumulative effects; </li>
+	<li>assessing the effects of chemical mixtures and inert ingredients; </li>
+	<li>analyzing the effects of pesticide use through the use of models; </li>
+	<li>incorporating uncertainties into the evaluations; and </li>
+	<li>using geospatial information and datasets that can be employed by the agencies in the course of these assessments.</li>
+</ul><h2>April 23, 2013</h2>
+
+<p><strong>EPA Takes Action Against New Jersey Importer of Illegal Pesticides </strong><br />
+	The U.S. Environmental Protection Agency has issued a legal complaint against the Caribbean Corp. of Little Ferry, New Jersey for violating federal pesticides law. The company faces fines of up to $51,200 for importing pesticides into the United States from Mexico without first properly notifying the EPA, and for importing, selling and distributing unregistered and misbranded pesticides. Under federal law, products used to kill pests, including antibacterial cleaners and disinfectants, must be registered with the EPA and contain labels written in English with instructions on their proper use.</p>
+
+<h2>April 22, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/652a89dc6957d24f85257b5500470f07!OpenDocument">MEDIA ADVISORY: EPA Commemorates Earth Day, Continues Conversation on Climate Change</a></strong><br />
+	This Earth Day, the U.S. Environmental Protection Agency (EPA) is expanding the conversation on climate change through public engagement and education on the importance of continuing to protect the air we breathe, the water we drink, and the land we live on.<br /><span>As we continue to make strides in protecting the climate by cutting carbon pollution and greenhouse gasses, EPA is participating in events to spur greater action to reduce the effects of climate change such as warmer temperatures, sea level rise, stronger storms and more droughts.</span></p>
+
+<h2>April 19, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/04ba3ed84030a32085257b520062a602!OpenDocument">MEDIA ADVISORY: EPA Acting Administrator Bob Perciasepe Participates in Earth Day Activities</a></strong><br />
+	U.S. Environmental Protection Agency (EPA) Acting Administrator Bob Perciasepe will be commemorating Earth Day 2013, April 22nd, by participating in a number of Earth Day activities.<br />
+	On Earth Day, April 22nd, Acting Administrator Perciasepe will join Secretary of Education Arne Duncan and White House CEQ Chair Nancy Sutley, to announce the first-ever District Sustainability Award and the honorees for the Green Ribbon Schools program. Schools are honored for their exemplary efforts to reduce environmental impact and utility costs, promote better health, and ensure effective environmental education, including civics and green career pathways.</p>
+
+<h2>April 17, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Seeks Efficacy Data for Antimicrobial Pesticides for Fogging or Misting</strong><br />
+	The EPA seeks to ensure that antimicrobial products that are intended to control public health microorganisms, and are applied by fogging or misting, are effective as claimed and are labeled in a manner that will prevent unreasonable adverse effects on human health or the environment. Registrants of antimicrobial products that contain fogger/mister label instructions are being asked either to provide existing efficacy data, or to commit to provide new data that address the public health claims for their fogger/mister products.</p>
+
+<h2>April 16, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/2123ff146446479e85257b4e0078a922!OpenDocument">MEDIA ADVISORY: EPA Senior Agricultural Counselor Speaks on Agriculture, Environmental Issues</a></strong><br /><span>Today Sarah Bittleman, the U.S. Environmental Protection Agency's (EPA) senior Agricultural Counselor to the EPA Administrator will speak on a conference call to agriculture trade press publications. She will discuss her background and her role at EPA as an advisor to the Acting Administrator on ways environmental policy may impact growers and the greater agriculture community.</span></p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/cb38b13061b2554185257b4f0080dc58!OpenDocument">MEDIA ADVISORY: EPA, USDA and State Partners to Discuss Priority Water Pollution Reduction Issues April 18 and 19 in Louisville, Kentucky</a></strong><br />
+	On April 18-19, representatives from the U.S. Environmental Protection Agency (EPA), the U.S. Department of Agriculture (USDA), other federal agencies and states in the Mississippi River basin will meet in Louisville, Ky. to discuss strategies and innovative approaches for reducing nutrient pollution in the basin and the Gulf of Mexico.</p>
+
+<h2><span>April 15, 2013</span></h2>
+
+<p><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/8bb70af80159992585257b4e007ac4c7!OpenDocument"><strong>EPA action protects Big Windsor Reservoir from feedlot waste</strong></a><br />
+	The U.S. Environmental Protection Agency has reached an agreement with the Cactus Hill Ranch Company (Cactus Hill) in which the company will pay $16,000 penalty to resolve alleged violations of the Clean Water Act at its sheep feedlot in Weld County, Colorado, near the Big Windsor Reservoir.<br />
+	According to the agreement, EPA alleges that Cactus Hill discharged wastewater in violation of the concentrated animal feeding operation (CAFO) regulations under the Clean Water Act. These violations include the discharge of waste without a permit and inadequate waste containment.</p>
+
+<h2><span>April 12, 2013</span></h2>
+
+<p><strong>Pesticide News Story: USA Today: EPA ensures safety </strong><br />
+	Your article "Study: Two-thirds of pesticides got flawed EPA approval" about EPA's process for ensuring the safety of chemicals in consumer products, mischaracterizes federal law and the agency's work to protect people's health and the environment.<br />
+	Consistent with federal pesticide laws, a pesticide never enters the marketplace without testing to ensure safety for both human health and the environment.<br />
+	The Environmental Protection Agency allows expanded uses of already-registered pesticides (known as conditional registration) only if there are sufficient data to ensure that human health and the environment are protected. Based on EPA's in-depth analysis in 2012, over 90% of conditionally registered products involve pesticides that are identical to pesticides already in the marketplace, or differed only in ways that EPA scientists believed would not significantly increase any negative effects.</p>
+
+<h2>April 11, 2013</h2>
+
+<p><strong>Pesticide News Story: Buffer Zone Calculator is Available to Assist Soil Fumigant Applicators</strong><br />
+	An electronic Buffer Zone Calculator is available in EPA's Soil Fumigant Toolbox. The EPA developed this new tool to help soil fumigant applicators, growers, enforcement personnel and others determine the buffer zone distances now required by soil fumigant product labels. Buffer zones provide distance between the edge of fields treated with pesticides and bystanders, people who live, work or otherwise spend time nearby.<br />
+	When the final set of soil fumigant label changes went into effect on December 1, 2012, implementing important new protections for workers and bystanders, buffer zones were among the mitigation measures that began appearing on fumigant labels. As of that date, only soil fumigant products bearing all of the required risk mitigation measures may be sold and distributed by registrants. Growers and applicators can still apply products bearing old labels until supplies are exhausted. However, labels of newly purchased products require applicators to calculate and observe buffer zones when applying soil fumigants.</p>
+
+<h2>April 10, 2012</h2>
+
+<p><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/7cd17bf640a0800985257b49006069f5!OpenDocument"><strong>EPA's FY 2014 Budget Proposal Maintains the Strength of Federal, State, and Tribal Core Environmental and Human Health Protections/FY 2014 Request Focuses on Transforming the Way EPA Does Business</strong></a><br /><span>Today the Obama Administration proposed a Fiscal Year 2014 (FY 2014) budget of $8.153 billion for the U.S. Environmental Protection Agency (EPA). This request is $296 million below the EPA's budget for Fiscal Year 2012. </span><br />
+	"EPA's FY 2014 budget reflects our firm commitment to keeping American communities across our country healthy and clean, while also taking into consideration the difficult fiscal situation and the declining resources of state, local and tribal programs," said EPA Acting Administrator Bob Perciasepe. "Our request takes a balanced approach to funding the agency, including increased investments in more efficient technologies as well as necessary program eliminations or reductions."</p>
+
+<h2>April 3, 2013</h2>
+
+<p><strong>EPA Settles with Hydrofarm, Inc. for Selling Unregistered Pesticides</strong><br />
+	The U.S. Environmental Protection Agency today announced a settlement with Hydrofarm, Inc. for selling two unregistered pesticides in violation of federal pesticide law. As part of the settlement, the Petaluma, Calif.-based Hydrofarm, Inc., one of the nation's largest distributors of agricultural and hydroponic supplies, has agreed to pay $316,000 in fines and has stopped selling both products.</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>March 2013</h2>
+
+<p><strong>March 2013 Newsletter Livestock and Poultry Environmental Learning Center </strong><br />
+	The March issue provides a link to the hub for live webcasting at Waste to Worth. It also introduces two new air quality resources on measuring air quality and odors. Several new videos on resources for policy makers, health impacts, biofilters and manure covers, odors/neighbors and setbacks have been published. A new feedlot air treatment cost calculator is also available. The resources section includes publications on manure in no-till systems, climate change, organic production, and more! Grazing animals and an agriculture app catalog headlines the "hot topics" area. As always, there are several great events and announcements.</p>
+
+<h2><span>March 29, 2013</span></h2>
+
+<p><strong><span><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/52786e8af124ffdd85257b3d0074cdbc!OpenDocument">Bio-diesel Fuel Company Owner Sentenced to 188 Months in Federal Prison for Crimes Connected to Illegal Fuels Scheme / Jeffrey Gunselman also fined $175,000 and ordered to pay nearly $55 million in restitution</a></span></strong><br /><span>Jeffrey David Gunselman, 30, was sentenced today by U.S. District Judge Sam R. Cummings to 188 months in federal prison, fined $175,000 and ordered to pay more than $54.9 million in restitution, following his guilty plea in December 2012 to an indictment charging 51 counts of wire fraud, 24 counts of money laundering and four counts of making false statements in violation of the Clean Air Act.</span><br /><br /><strong>Pesticide News Story: Pesticide Dietary Exposure Database and Software Now Available</strong><br /><span>The EPA has released an updated version of the Dietary Exposure Evaluation Model-Food Commodity Intake Database (DEEM-FCID)/Calendex software (v. 3.18/9.14). This replaces the previous version posted on the EPA website and made available to the public in June 2012. The DEEM-FCID software can be found and downloaded from our web site.</span></p>
+
+<h2><br /><span>March 28, 2013</span></h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/e4cfca6dc6b9847985257359003f5336/39069d39239f808b85257b3c0078420b!OpenDocument">Alaska seafood processors settle with EPA for Clean Water Act waste discharge violations</a></strong><br /><span>Two seafood processors operating in Alaskan waters failed to comply with Clean Water Act permits that regulate seafood waste discharges, according to settlement agreements with the U.S. Environmental Protection Agency. Aleutian Leader Fisheries and Salamatof Seafoods agreed to settle the violations with EPA in separate agreements and pay fines.</span><br /><br /><strong>Pesticide News Story: EPA Workshop on New Provisions in PRIA 3 - April 10, 2013</strong><br /><span>The EPA will hold a workshop on April 10 to discuss new provisions in the Pesticide Registration Improvement Extension Act of 2012, known as PRIA 3, and the agency's experiences to date with its implementation. Plenary presentations will include discussions on what is new in PRIA 3, the 2-day label review process, new technical screening of applications, the EPA's new similarity clinic process to handle applications for substantially similar products, changes in primary and secondary actions, and inert ingredients in pesticide products.</span></p>
+
+<h2><br />
+	March 27, 2013</h2>
+
+<p><strong>Pesticide News Story: New Process Gives Stakeholders More Opportunities for Input in Pesticide Registration Reviews and Endangered Species Act Consultations</strong><br />
+	The EPA is making significant changes in the pesticide registration review process under the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA) to enhance opportunities for stakeholder input and improve coordination across federal agencies during associated Endangered Species Act (ESA) consultations. These changes are discussed in the final paper, "Enhancing Stakeholder Input in the Pesticide Registration Review and ESA Consultation Processes and Development of Economically and Technologically Feasible Reasonable and Prudent Alternatives." Jointly developed by the EPA, the Department of Agriculture (USDA), and the National Marine Fisheries and Fish and Wildlife Services (known collectively as the Services), the final paper reflects comments received on a proposed version issued in August 2012. Both the proposed and final documents are available in docket EPA-HQ-OPP-2012-0442 at <a href="https://www.regulations.gov/">www.regulations.gov</a>.</p>
+
+<h2><br />
+	March 25, 2013</h2>
+
+<p><strong>Pesticide News Story: New Materials Available for Farmworker Families for National Farmworker Awareness Week</strong><br />
+	March 24-31, 2013 marks the 14th annual National Farmworker Awareness Week. Through multiple cooperative agreements and partnerships, the EPA supports training and resources for farmworkers to protect themselves and their families from potential risks of pesticide exposure.<br />
+	Under an agreement with the EPA, The Association of Farmworker Opportunity Programs (AFOP) has developed new pesticide safety training materials for use in training farmworkers and their families to prevent pesticide take home exposure. Pesticide take-home exposure occurs when farmworkers take home pesticide residues that may cling to their skin, clothing, hats, boots, tools, lunch coolers, car seats and any other items in the work environment. Their children may then be exposed to these pesticide residues.</p>
+
+<h2>March 21, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Criteria for IR-4 Public Interest Finding Now Available on the Web</strong><br />
+	The EPA has posted the criteria that it will use in determining when a pesticide registration application will be exempt from paying the registration service fee under the Pesticide Registration Improvement Extension Act (PRIA 3). Under PRIA 3, pesticide registration applications that are solely associated with a tolerance petition submitted in connection with the Interregional Research Project No. 4 and is in the public interest is exempt from registration service fees.</p>
+
+<h2><br />
+	March 20, 2013</h2>
+
+<p><strong>Recent Actions Ensure New England Companies Adhere to Protections in Federal Pesticide Law</strong><br />
+	Over the past several months, EPA has taken a series of enforcement actions against several New England firms for alleged violations of the federal law that governs pesticides in the U.S. (the Federal Insecticide, Fungicide, and Rodenticide Act, or "FIFRA").</p>
+
+<h2><br />
+	March 18, 2013</h2>
+
+<p><strong>Secure Pesticides and Chemicals during Poison Prevention Week/More than 145,000 reports made each year to poison centers involving pesticides and disinfectants</strong><br /><span>During National Poison Prevention Week, March 17-23, the U.S. Environmental Protection Agency (EPA) urges parents and caregivers to secure pesticides and other household chemicals in locked cabinets out of children's reach. </span></p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/572cb7a21b35ec3f85257b36006b8357!OpenDocument">EPA Promotes "Fix a Leak Week" with the Grand Opening of a WaterSense Home in Dallas, TX</a></strong><br />
+	Minor water leaks waste more than 1 trillion gallons of water each year in U.S. homes. During its annual "Fix a Leak Week," the U.S. Environmental Protection Agency's (EPA) WaterSense program reminds Americans to check household plumbing fixtures and irrigation systems for leaks. This year's "Fix a Leak Week" event runs from March 18 to 24.</p>
+
+<h2>March 14, 2013</h2>
+
+<p><strong>Pesticide News Story: New Project LEAF Materials Available for Training Farmworkers and Families to Limit Pesticide Exposure</strong><br />
+	The Association of Farmworker Opportunity Programs has developed new pesticide safety training materials for use in training farmworkers and their families to prevent pesticide take home exposure. Pesticide take-home exposure occurs when farmworkers take home pesticide residues that may cling to their skin, clothing, hats, boots, tools, lunch coolers, car seats and any other items in the work environment. Their children may then be exposed to these pesticide residues.</p>
+
+<h2>March 11, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA to Hold Pesticide Cancellation Hearing</strong><br /><span>On March 6th, the pesticide manufacturer Reckitt Benckiser Inc. requested a hearing in response to the EPA's notice of intent to cancel 12 of the company's D-Con mouse and rat poison products, averting the ban that otherwise would have taken effect on March 7th. The 12 D-Con products fail to comply with EPA's current safety standards and pose unreasonable risks to children, pets and wildlife. This is the first time in more than 20 years that a company has declined to voluntarily implement EPA risk mitigation measures for a pesticide product and requested a cancellation hearing.  </span></p>
+
+<h2>March 8, 2013</h2>
+
+<p><strong>Pesticide News Story: FIFRA SAP to Consider Scientific Issues Concerning the Draft Product Performance Data for Products Claiming Efficacy against Invertebrate Pests</strong><br />
+	On March 19-21, 2013, the Pesticide Program will consult the Federal Insecticide, Fungicide, and Rodenticide Act Scientific Advisory Panel to consider scientific issues associated with product performance data that may be needed for the EPA to evaluate the efficacy of pesticide products used to control invertebrate pests. During the 3-day meeting the Panel will focus on data and methodologies being considered to support control of invertebrate pests of significant public health importance such as ticks and mosquitoes. Two other categories under consideration are wood-destroying insects and invasive invertebrate species.</p>
+
+<p><strong>Pesticide News Story: EPA Releases for Public Comment Draft Human Health and Ecological Risk Assessments for Pesticide Registration Review</strong><br />
+	The EPA is releasing for public review and comment the first group of draft human health and ecological risk assessments in the pesticide registration review process as laid out in the agency's proposed plan to increase stakeholder engagement in the registration review process.  This action reflects the EPA's progress in moving from the early stage of registration review, in which new dockets are opened and work plans are established for pesticides beginning the process, to the later stage in which human health and ecological risk assessments are updated as needed and risk mitigation decisions are developed, with input from stakeholders and the public. Issuing the draft assessments supports the EPA's overall program objective of completing the first cycle of registration review for over 700 pesticide cases by October 2022.</p>
+
+<h2>March 07, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Extends Comment Period on Chlorpyrifos Preliminary Volatilization Assessment to May 7, 2013 </strong><br />
+	As announced in the Federal Register on March 6, 2013, the EPA is extending for an additional 60 days the comment period on the agency's preliminary volatilization assessment for the registration review of chlorpyrifos. The comment period will close on May 7, 2013, rather than on March 8, 2013. The agency received requests from several commenters to extend the original 30-day comment period. Comments should be submitted by May 7, 2013, to docket<span> </span>EPA-HQ-OPP-2008-0850 at www.regulations.gov.</p>
+
+<h2>March 06, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/02f957f11f1e9db085257b260073b46f!OpenDocument">EPA and four Yakima Valley dairies reach agreement to reduce nitrate in local groundwater </a></strong><br />
+	The U.S. Environmental Protection Agency has reached legal agreements with four Yakima Valley dairies that will help reduce nitrate in area groundwater and nearby drinking water wells.</p>
+
+<p>"This is good news, especially for those working locally to protect Yakima Valley groundwater," said EPA Regional Administrator Dennis McLerran, in Seattle. "By working constructively with us in this local situation, the dairies have committed to protect drinking water and we have committed to collaborate on practices that keep people safe and farms in business."</p>
+
+<h2>March 04, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/db6bac93e6101e5e85257b240053b479!OpenDocument">Media Advisory: EPA's Pollinator Summit on March 5</a></strong><br />
+	The U.S. Environmental Protection Agency (EPA) and the U.S. Department of Agriculture (USDA) will ;hold a public meeting with key stakeholders to collaborate on activities to protect honey bees and other pollinators from pesticide risks.<br />
+	Bees are an important component of agricultural production and are critical to food and ecosystems. The summit will be an opportunity to advance our collective understanding and efforts to protect them.</p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>February 2013</h2>
+
+<p><strong>February 2013 Newsletter Livestock and Poultry Environmental Learning Center </strong><br />
+	The February issue introduces the Waste to Worth preview webcast. There are many great, ‎new resources available including air quality videos, smartphone apps, Manure 101, and air ‎quality curriculum. Some of the hot topics include pathogens and EPA's CAFO rule review. As ‎always, there is much more from beginning farmers all the way to a very expensive ‎pineapple.</p>
+
+<h2>February 27, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/1d680688194ecd9785257b1f0079df81!OpenDocument">Wood treatment companies violate federal pesticide laws intended to protect human health </a></strong><br />
+	Gardner-Fields, Inc. of Tacoma, Washington and IBC Manufacturing Co. of Memphis, Tennessee will pay fines for violating federal pesticide laws, according to separate settlements announced by the U.S. Environmental Protection Agency.<br />
+	Companies that sell or distribute mislabeled pesticides put people's health and the environment at risk,said Ed Kowalski, Director of EPA Region 10 Compliance and Enforcement. Without proper labeling and safety instructions, users can unintentionally misapply pesticides and may lack important information for emergency first aid.</p>
+
+<h2>February 26, 2013</h2>
+
+<div><strong><a href="http://www.usda.gov/wps/portal/usda/usdahome?contentid=2013/02/0036.xml&amp;contentidonly=true">USDA Releases Report on the Growing Importance of Food Hubs in Rural America</a></strong> <a class="exit-disclaimer" href="../web-policies-and-procedures/exit-epa.html" title="EPA's External Link Disclaimer">Exit</a></div>
+
+<p>Agriculture Deputy Secretary Kathleen Merrigan today announced the release of a report which provides a comprehensive look at the economic role, challenges and opportunities for food hubs in the nation's growing local food movement. The announcement was made during a visit to Hollygrove Market and Farm, a produce market, local distributor and farm in downtown New Orleans. In operation since 2009, Hollygrove Farm and Market sources from twenty local growers across southern Louisiana and Mississippi. Hollygrove's mission includes increasing access to fresh produce for underserved New Orleans neighborhoods. The organization first began operations as part of the city's post-Hurricane Katrina rebuilding efforts.</p>
+
+<h2>February 25, 2013</h2>
+
+<div><strong><a href="http://www.usda.gov/wps/portal/usda/usdahome?contentid=2013/02/0034.xml&amp;contentidonly=true">Agriculture Secretary Vilsack Appoints Members to the NAREEE Advisory Board</a> </strong><a class="exit-disclaimer" href="../web-policies-and-procedures/exit-epa.html" title="EPA's External Link Disclaimer">Exit</a></div>
+
+<p>Agriculture Secretary Tom Vilsack today announced the appointment of 10 members to the National Agricultural Research, Extension, Education, and Economics (NAREEE) Advisory Board.</p>
+
+<h2>February 22, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/ab2d81eb088f4a7e85257359003f5339/499ba7061892802085257b1a006f9522!OpenDocument">Rodney Hailey Sentenced to More Than 12 Years in Prison for Selling $9 Million in Fraudulent Renewable Fuel Credits / Owner of Clean Green Fuel falsely claimed his company produced 23 million gallons of renewable fuel </a></strong><br />
+	U.S. District Judge William D. Quarles, Jr. sentenced Rodney R. Hailey, of Perry Hall, Md., today to nearly 12 years and six months in prison, followed by three years of supervised release, for selling $9 million in renewable fuel credits which he falsely claimed were produced by his company, Clean Green Fuel, LLC. When invalid renewable fuel credits are 'produced' and sold, it undermines the integrity of an important program designed by Congress to reduce the nation's dependence on foreign oil and to grow the nation's renewable energy industry, said Cynthia Giles, assistant administrator for EPA's Office of Enforcement and Compliance Assurance. Today's sentence shows that there are serious consequences, including jail time, for defrauding the renewable fuels program for personal gain.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/0c0affede4f840bc8525781f00436213/30f78293d56751c485257b1a006d74a4!OpenDocument">EPA to Co-Host Austin Sustainable Materials Management Workshop</a></strong><br />
+	The Environmental Protection Agency is partnering with the City of Austin and the State of Texas Alliance for Recycling (STAR) to help organizations think about materials management sustainably. The three agencies will host a workshop, Sustainable Materials Management: Bringing Everyone and Everything Together. Sustainable materials management promotes using and reusing materials most productively and sustainably throughout their life cycles.<br />
+	Experts from the EPA, STAR, and Austin Resource Recovery will be there to facilitate discussion about achievements in sustainable materials management, as well as what works, what doesn't and what tools are available for anyone interested in getting involved.</p>
+
+<h2>February 21, 2013</h2>
+
+<p><strong>‎2013 Pollinator Summit - March 5, 2013‎</strong><br />
+	The EPA and the U.S. Department of Agriculture are holding a public meeting with key ‎stakeholders to advance our understanding and our efforts to protect honey bees and other ‎pollinators from pesticide risks.‎<br />
+	The EPA has been working aggressively to protect honey bees and other pollinators. The 2013 ‎Pollinator Summit is part of the agency's ongoing collaboration with beekeepers, growers, ‎pesticide manufacturers and federal and state agencies to manage potential pesticide risks to ‎bees.‎<br />
+	Date, Time and Location<strong>:‎ </strong>The meeting will be held on March 5, 2013, from 8:00 AM to 5:00 PM EST at the Office of ‎Pesticide Programs, First Floor Conference Center, One Potomac Yard (South Bldg.), 2777 S. ‎Crystal Dr., Arlington, VA 22202.‎</p>
+
+<h2>February 8, 2013</h2>
+
+<p><strong>EPA Strengthens Protections for Participants in Third Party Human Studies Involving Pesticides</strong><br />
+	Furthering the U.S. Environmental Protection Agency's (EPA) commitment to rigorous science conducted with the highest ethical standards, EPA Administrator Lisa P. Jackson has signed amendments strengthening existing standards for human research involving pesticides submitted by third parties for consideration in EPA decision-making. These amendments apply to studies involving the controlled exposure of participants to pesticides.</p>
+
+<p><strong>Pesticide News Story: Chlorpyrifos Preliminary Volatilization Assessment Suggests Bystander Risks of Concern; EPA Requests Comment to Address Uncertainties</strong><br />
+	The EPA is requesting comment on a preliminary evaluation of the potential risks to children and other bystanders from volatilization of chlorpyrifos from treated crops. While there are uncertainties associated with EPA's preliminary assessment, the available data indicate that vapor phase chlorpyrifos may be emitted from treated fields at levels resulting in exposure to children and others who live, work, attend school or otherwise spend time nearby.  In some circumstances, these bystanders may be exposed to chlorpyrifos and/or the transformation product chlorpyrifos-oxon at concentrations that could cause adverse effects. The chlorpyrifos preliminary volatility assessment, guide to commenters, and related documents are available in docket EPA-HQ-OPP-2008-0850 at <a href="https://www.regulations.gov">www.regulations.gov</a>.<em> </em></p>
+
+<h2>February 7, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/ab2d81eb088f4a7e85257359003f5339/0f482ac14c83e34285257b0b005c70a1!OpenDocument">EPA Releases State Enforcement Performance Information and Comparative Maps / Agency to host webinar demonstrating new data features</a></strong><br /><span>Today, the U.S. Environmental Protection Agency (EPA) announced the release of state dashboards and comparative maps that provide the public with information about the performance of state and EPA enforcement and compliance programs across the country. </span></p>
+
+<p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+
+<h2>January 2013</h2>
+
+<p><strong><a href="http://water.epa.gov/polwaste/nps/outreach/upload/93issue.pdf">January 2013 Nonpoint Source News-Notes</a></strong><br />
+	This issue of <em>Nonpoint Source News-Notes </em>focuses on states' use of Clean Water State Revolving Funds (CWSRF) to support nonpoint source pollution management projects. The CWSRF was established in 1987 to fund the construction of publicly owned treatment works (POTWs), non­point source pollution management and estuary protection projects. Historically, the majority of CWSRF funding has been directed toward POTWs, with 4.2 percent of cumulative funding provided to nonpoint source projects. Even at 4.2 percent, given that total cumulative CWSRF funding to date is currently $95.4 billion, the amount loaned for nonpoint source projects over the years is about $4 billion. Importantly, more states are discovering creative ways to leverage CWSRF to support both POTWs and nonpoint source projects.</p>
+
+<h2>January 31, 2013</h2>
+
+<p><strong><span><a href="http://yosemite.epa.gov/opa/admpress.nsf/d0cf6618525a9efb85257359003fb69d/75e7cf36330d01c185257b040067f287!OpenDocument">EPA Proposes 2013 Renewable Fuel Standards</a></span></strong><br /><span>The U.S. Environmental Protection Agency (EPA) is proposing the 2013 percentage standards for four fuel categories that are part of the agency's Renewable Fuel Standard program (RFS2).</span><em><span> </span></em></p>
+
+<h2>January 30, 2013</h2>
+
+<p><strong>EPA Moves to Ban 12 D-Con Mouse and Rat Control Products / Action Will Prevent Thousands of Accidental Exposures Among Children Each Year</strong><br />
+	The U.S. Environmental Protection Agency is moving to ban the sale of 12 D-Con mouse and rat poison products produced by Reckitt Benckiser Inc. because these products fail to comply with current EPA safety standards. Approximately 10,000 children a year are accidentally exposed to mouse and rat baits; EPA has worked cooperatively with companies to ensure that products are both safe to use around children and effective for consumers. Reckitt Benckiser Inc., maker of D-Con brand products, is the only rodenticide producer that has refused to adopt EPA's safety standards for all of its consumer use products.</p>
+
+<h2>January 24, 2013</h2>
+
+<p><strong>EPA Announces Settlements with Company for Multiple Violations of Chemical Reporting and Pesticide Laws</strong><br />
+	The U.S. Environmental Protection Agency (EPA) announced that it reached settlements with two subsidiaries of the Kemira Group for violations of chemical and pesticide laws.<br />
+	The settlement with Kemira Chemicals resolves alleged violations of the Federal Insecticide, Fungicide, and Rodenticide Act, including the sale and distribution of an unregistered pesticide, the sale and distribution of misbranded pesticides, and pesticide production reporting violations. The sale and distribution of unregistered or misbranded pesticides can cause serious illness in humans and be harmful to the environment. Under the terms of the agreement, Kemira Chemicals has corrected the alleged violations and will pay a civil penalty of $301,600.</p>
+
+<h2>January 17, 2013</h2>
+
+<p><strong>Pesticide News Story: Review on Corn Rootworm Resistance to Cry3Bb1 Posts to EPA IRM Docket</strong><br />
+	On January 17, 2013, the EPA released to the public an October 2012 Insect Resistance Management Team review and a January 17, 2013, memorandum summarizing that review<span><span>. These documents present the EPA IRM Team's scientific conclusions on the status of corn rootworm resistance to the Cry3Bb1 toxin in certain parts of the Corn Belt. </span></span></p>
+
+<h2>January 16, 2013</h2>
+
+<p><strong>Pesticide News Story: EPA Seeks Comment on Pesticide Registration Notice for Web-Distributed Labeling</strong><br />
+	In the January 16, 2013, Federal Register notice, the EPA is inviting comment on a draft Pesticide Registration notice that outlines a process by which registrants may add web-distributed labeling to the container labeling for a product. The container labeling would not be shortened in any way with the addition of web-distributed labeling as proposed. We believe that web-distributed labeling has the potential to improve compliance with labeled use instructions by making pesticide labels easier to read and comprehend. Web-distributed labeling would accomplish this, in part, by allowing the user to obtain online legally valid labeling that includes instructions for a specific location and intended use.</p>
+
+<h2>January 15, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/d0cf6618525a9efb85257359003fb69d/c1a8e96e462392f785257af4007fa764!OpenDocument">EPA Regions 7 and 8 Meet State Agriculture Directors in Denver</a></strong><br />
+	Officials from EPA Regions 7 and 8 hosted meetings Jan. 14 and 15 in Denver, Colo., with the directors of state agriculture departments of Colorado, Iowa, Kansas, Missouri, Montana, Nebraska, North Dakota, South Dakota, Utah and Wyoming. The meetings provided a forum for dialogue on EPA programs and regulations as well as specific issues, interests and concerns of the agriculture sector.</p>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/d0cf6618525a9efb85257359003fb69d/7932a2693c16adaa85257af40052dead!OpenDocument">EPA Finalizes Revisions to Clean Air Standards for Stationary Engines / Updated rule provides ‎extensive public health protections, slashes costs of compliance </a></strong><br />
+	Today, in compliance with settlement agreements, the U.S. Environmental Protection Agency (EPA) ‎finalized revisions to standards to reduce air pollution from stationary engines that generate electricity ‎and power equipment at industrial, agricultural, oil and gas production, power generation and other ‎facilities.‎</p>
+
+<h2>January 10, 2013</h2>
+
+<p><strong><a href="http://yosemite.epa.gov/opa/admpress.nsf/d0cf6618525a9efb85257359003fb69d/f234a61245b26bed85257aef006d2c18!OpenDocument">EPA Provides Comments on Iowa Nutrient Reduction Strategy</a></strong><br />
+	U.S. EPA Region 7 is providing comments on the draft Iowa Nutrient Reduction Strategy released Nov. 19, 2012. Karl Brooks, regional administrator, in a letter commends the Iowa Department of Natural Resources (IDNR) and Iowa Department of Agriculture and Land Stewardship (IDALS) for developing the strategy that embraces ambitious specific nutrient reduction targets.</p>
+
+<h2>January 3, 2013</h2>
+
+<p><strong>Pesticide News Story: Proposed Rule Will Enhance the Public's Right to Know the Ingredients in Minimum Risk Pesticide Products</strong><br />
+	The EPA is proposing to clarify the substances on the minimum risk pesticide ingredient list and the way ingredients are identified on product labels. Minimum risk pesticides are a special class of pesticides that are not subject to federal registration requirements because their ingredients, both active and inert, are demonstrably safe for the intended use. The agency is proposing to reorganize these lists and add specific chemical identifiers to make clearer to manufacturers, the public and federal, state and tribal inspectors the specific ingredients that are permitted in minimum risk pesticide products. The EPA is also proposing to require producer contact information and the use of specific common chemical names in lists of ingredients on minimum risk pesticide product labels.</p>
+
+<ul><li><a href="agriculture-news-2015.html">Ag News from 2015</a></li>
+	<li><a href="agriculture-news-2014.html">Ag News from 2014</a></li>
+</ul><p class="pagetop"><a href="agriculture-news-2013.html#main-content">Top of Page</a></p>
+</div>
+  </div>
+
+  
+  
+</div>
+
+
+
+<div id="block-pane-epa-web-area-footer" class="block block-pane  block-pane-epa-web-area-footer">
+  
+  
+  
+  
+    <p class="web-area-footer"><a href="../node/78331.html" class="contact-us">Contact Us</a> to ask a question, provide feedback, or report a problem.</p>  
+</div>
+  
+    <!--googleoff: all-->
+      </div>
+  </section>
+
+  <nav class="nav simple-nav simple-main-nav" role="navigation">
+    <div class="nav__inner">
+      <h2 class="element-invisible">Main menu</h2><ul class="menu"><li class="expanded menu-item"><a href="../learn-issues.1.html" title="View links to the most popular pages for each of EPA’s top environmental topics." class="menu-link">Environmental Topics</a><ul class="menu"><li class="menu-item"><a href="../learn-issues/learn-about-air.html" title="" class="menu-link">Air</a></li>
+<li class="menu-item"><a href="../node/17591.html" title="" class="menu-link">Bed Bugs</a></li>
+<li class="menu-item"><a href="../learn-issues/learn-about-chemicals-and-toxics.html" title="" class="menu-link">Chemicals and Toxics</a></li>
+<li class="menu-item"><a href="../climatechange/index.html" title="" class="menu-link">Climate Change</a></li>
+<li class="menu-item"><a href="../node/165443.html" title="" class="menu-link">Environmental Information by Location</a></li>
+<li class="menu-item"><a href="../learn-issues/greener-living-resources.html" title="" class="menu-link">Greener Living</a></li>
+<li class="menu-item"><a href="../learn-issues/learn-about-health-and-safety.html" title="" class="menu-link">Health</a></li>
+<li class="menu-item"><a href="../learn-issues/learn-about-waste.html" title="" class="menu-link">Land, Waste, and Cleanup</a></li>
+<li class="menu-item"><a href="../lead/index.html" title="" class="menu-link">Lead</a></li>
+<li class="menu-item"><a href="../mold/mold_remediation.html" title="" class="menu-link">Mold</a></li>
+<li class="menu-item"><a href="../pesticides/health/index.htm" title="" class="menu-link">Pesticides</a></li>
+<li class="menu-item"><a href="../radon/pubs/citguide.html" title="" class="menu-link">Radon</a></li>
+<li class="menu-item"><a href="../learn-issues/water-resources.html" title="" class="menu-link">Water</a></li>
+<li class="menu-item"><a href="../node/164885.html" title="" class="menu-link">A-Z Index</a></li>
+</ul></li>
+<li class="menu-item"><a href="../lawsregs/guidance/wetlands/mining.cfm.html" title="View links to regulatory information by topic and sector, and to top pages about environmental laws, regulations, policies, compliance, and enforcement." class="menu-link">Laws &amp; Regulations</a><ul class="menu"><li class="menu-item"><a href="../node/3173.html" title="" class="menu-link">By Business Sector</a></li>
+<li class="menu-item"><a href="../node/66677.html" title="" class="menu-link">By Topic</a></li>
+<li class="menu-item"><a href="../node/19411.html" title="" class="menu-link">Compliance</a></li>
+<li class="menu-item"><a href="../node/10885.html" title="" class="menu-link">Enforcement</a></li>
+<li class="menu-item"><a href="../node/66719.html" title="" class="menu-link">Laws and Executive Orders</a></li>
+<li class="menu-item"><a href="../node/11139.html" title="" class="menu-link">Policy and Guidance</a></li>
+<li class="menu-item"><a href="../node/11249.html" title="" class="menu-link">Regulations</a></li>
+</ul></li>
+<li class="expanded menu-item"><a href="https://www.epa.gov/aboutepa" title="Learn more about our mission, organization, and locations." class="menu-link">About EPA</a><ul class="menu"><li class="menu-item"><a href="https://www.epa.gov/aboutepa/epas-acting-administrator" title="" class="menu-node-unpublished menu-link">EPA Administrator</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa/current-epa-leadership" title="" class="menu-link">Current Leadership</a></li>
+<li class="menu-item"><a href="../epahome/locate1.htm" title="" class="menu-link">Organization Chart</a></li>
+<li class="menu-item"><a href="http://cfpub.epa.gov/locator/index.cfm" title="" class="menu-link">Staff Directory</a></li>
+<li class="menu-item"><a href="../node/863.html" title="" class="menu-link">Planning, Budget and Results</a></li>
+<li class="menu-item"><a href="../node/32663.html" title="" class="menu-link">Jobs and Internships</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa#pane-2" title="" class="menu-link">Headquarters Offices</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa#pane-4" title="" class="menu-link">Regional Offices</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa#pane-5" title="" class="menu-link">Labs and Research Centers</a></li>
+</ul></li>
+</ul>    </div>
+  </nav>
+
+
+<footer class="main-footer clearfix" role="contentinfo">
+  <div class="main-footer__inner">
+    
+  
+  <div class="region-footer">  <div id="block-pane-epa-global-footer" class="block block-pane  block-pane-epa-global-footer">
+  
+  
+  
+  
+    <div class="row cols-3">
+  <div class="col size-1of3">
+    <div class="col__title">Discover.</div>
+    <ul class="menu">
+      <li><a href="../node/39087.html">Accessibility</a></li>
+      <li><a href="https://www.epa.gov/aboutepa/administrator-gina-mccarthy">EPA Administrator</a></li>
+      <li><a href="../node/863.html">Budget &amp; Performance</a></li>
+      <li><a href="../oam/ptod/activeindex.htm">Contracting</a></li>
+      <li><a href="../home/grants-and-other-funding-opportunities.html">Grants</a></li>
+      <li><a href="https://www.epa.gov/ocr/whistleblower-protections-epa-and-how-they-relate-non-disclosure-agreements-signed-epa-employees">No FEAR Act Data</a></li>
+      <li><a href="../node/383.html">Privacy and Security</a></li>
+    </ul>
+  </div>
+  <div class="col size-1of3">
+    <div class="col__title">Connect.</div>
+    <ul class="menu">
+      <li><a href="https://www.data.gov/">Data.gov</a></li>
+      <li><a href="../node/44743.html">Inspector General</a></li>
+      <li><a href="../node/32663.html">Jobs</a></li>
+      <li><a href="https://www.epa.gov/newsroom">Newsroom</a></li>
+      <li><a href="../open.html">Open Government</a></li>
+      <li><a href="https://www.regulations.gov/">Regulations.gov</a></li>
+      <li><a href="https://www.epa.gov/newsroom/email-subscriptions">Subscribe</a></li>
+      <li><a href="https://www.usa.gov/">USA.gov</a></li>
+      <li><a href="https://www.whitehouse.gov/">White House</a></li>
+    </ul>
+  </div>
+  <div class="col size-1of3">
+    <div class="col__title">Ask.</div>
+    <ul class="menu">
+      <li><a href="../home/forms/contact-us.html">Contact Us</a></li>
+      <li><a href="../node/45821.html">Hotlines</a></li>
+      <li><a href="../node/40665.html">FOIA Requests</a></li>
+      <li><a href="../node/1623.html">Frequent Questions</a></li>
+    </ul>
+
+    <div class="col__title">Follow.</div>
+    <ul class="social-menu">
+      <li><a class="menu-link social-facebook" href="https://www.facebook.com/EPA">Facebook</a></li>
+      <li><a class="menu-link social-twitter" href="https://twitter.com/epa">Twitter</a></li>
+      <li><a class="menu-link social-youtube" href="https://www.youtube.com/user/USEPAgov">YouTube</a></li>
+      <li><a class="menu-link social-flickr" href="https://www.flickr.com/photos/usepagov">Flickr</a></li>
+      <li><a class="menu-link social-instagram" href="https://www.instagram.com/epagov">Instagram</a></li>
+    </ul>
+
+    <p class="last-updated">Last updated on July 22, 2016</p>
+  </div>
+</div>  
+</div>
+  </div>
+  </div>
+</footer>
+  <script type="text/javascript" src="../sites/production/files/js/js_LcFRnnSHVah-Aw_WQ8aVLXhp3HPJvrOe4h6YEXA5BT8.js"></script>
+<script type="text/javascript" src="../sites/production/files/js/js_oZD9-WvfiElJ5KPavqu9ZAQiZcfWlzNCzxFHpedR9dI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/production/files/js/js_slEmfY49PYt03JJafrjvmxmEfVQE7vqI-454V7NM5ys.js"></script>
+<script type="text/javascript" src="https://www.epa.gov/sites/all/modules/custom/epa_core/js/alert.js?okdq0m"></script>
+<script type="text/javascript" src="../sites/production/files/js/js_cjmkhjdYj9qyv8rH-ylGyD-SIMacZ-dzdqW9m8x_TEc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName('script')[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0005/9240.js";
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+      
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/production/files/js/js_UG00nMwTXcewn_yu8c3s7Bgbxmhbdk0BE1GwQLAuoQU.js"></script>
+<script type="text/javascript" src="../sites/production/files/js/js_CaVFOiO3QpcJYEzSDhR3RmEeSnMbgnImgh5uEDkDD_0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"epa","theme_token":"SpOJ9Zg9jNSP7oXmk_hGw65wVMWut5-4PAoPEJz7s1E"},"epa_wysiwyg":{"site_default_lang":"en"},"add_definitions":{"path":"sites\/all\/modules\/custom\/add_definitions","dictionary_filter":"1","dictionary_undo":"1","dictionary_occurrences":"1","service_endpoint":"https:\/\/termlookup.epa.gov\/termlookup\/v1\/terms"},"ogContext":{"groupType":"node","gid":"78329"}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script src="/sites/all/themes/epa/js/ie.js"></script><![endif]--><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ead36e43ac","applicationID":"21951268","transactionName":"YABRbUoFXRBYAUNeXllKclpMDVwNFhJWUFRoCFJXWQNWEWYMWFNUaBNaXE87QwJeBw==","queueTime":0,"applicationTime":1786,"atts":"TEdSGwIfTh4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
