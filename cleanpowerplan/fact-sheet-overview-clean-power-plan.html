@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<!--[if IEMobile 7]><html class="iem7 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)]><!--> <html class="no-js not-oldie" lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgEFVVRQGwEBXVRTBQcP"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="../sites/all/themes/epa/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width" />
+<meta name="MobileOptimized" content="width" />
+<meta http-equiv="ImageToolbar" content="false" />
+<meta http-equiv="cleartype" content="on" />
+<!--googleon: all--><meta name="DC.description" content="Overview of the Final Clean Power Plan, what it is, why it is needed, how it works, benefits, and state plans" />
+<meta name="DC.title" content="FACT SHEET: Overview of the Clean Power Plan" />
+<!--googleoff: snippet--><meta name="keywords" content="clean power plan, climate, power plants, health benefits, climate benefits, carbon pollution, co2 emissions, electricity system, energy reliability" />
+<link rel="canonical" href="fact-sheet-overview-clean-power-plan.html" />
+<link rel="shortlink" href="https://www.epa.gov/node/104615" />
+<meta name="DC.language" content="en" />
+<meta name="DC.Subject.epachannel" content="Laws &amp; Regulations, Learn the Issues" />
+<meta name="DC.type" content="Overviews and Factsheets" />
+<meta name="DC.date.created" content="2015-08-06" />
+<meta name="DC.date.modified" content="2016-06-27" />
+<meta name="DC.date.reviewed" content="2017-06-27" />
+<meta name="DC.creator" content="US EPA,OAR,OAQPS" />
+<meta name="WebArea" content="Clean Power Plan" />
+<meta name="WebAreaType" content="Microsite" />
+<meta name="ContentType" content="document" />
+  <title>FACT SHEET: Overview of the Clean Power Plan | Clean Power Plan | US EPA</title>
+  <!--googleoff: all-->
+  <link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_3h5HfPyG4w0xmgk_oaLP90_rUIs7Xmed0sNIfCxGAyg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_NFNG4tEiKv-n_hlnQ4iBNlFbb-9XRaRVA9wRk6nUPHY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_Pvo-DHIdW2Qn9LljtH2R1QKqzm8QoJ18zl6wR9Dk-Ak.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_28CvFue6tf4M8aL9zid2j2W58Z6HleySMQyNH35QhI0.css" media="all" />
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="https://www.epa.gov/sites/production/files/css/css_H7Qs31C_4pOAKdUe1sAA01nOyZTqO_KOIt1uDr0iKB4.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_68w49Vk1SYPj8EPx2iW8fUagDJ4xc2WJQO7Dn7aLNaU.css" media="all" />
+  <link rel="alternate" type="application/atom+xml" title="EPA.gov All Press Releases" href="https://www.epa.gov/newsreleases/search/rss" />
+  <link rel="alternate" type="application/atom+xml" title="EPA.gov Headquarters Press Releases" href="https://www.epa.gov/newsreleases/search/rss/field_press_office/headquarters" />
+  <link rel="alternate" type="application/atom+xml" title="Greenversations, EPA's Blog" href="https://blog.epa.gov/blog/feed/" />
+  <link rel="alternate" type="application/atom+xml" title="Clean Power Plan" href="../feed/40801/rss.xml" />  <!--[if lt IE 9]><script src="/sites/all/themes/epa/js/html5.js"></script><![endif]-->  </head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node-104615 node-type-document og-context og-context-node og-context-node-40801 section-cleanpowerplan microsite" >
+  <div class="skip-links"><a href="fact-sheet-overview-clean-power-plan.html#main-content" class="skip-link element-invisible element-focusable">Jump to main content</a></div>
+      
+  
+  <div class="region-alert">  <div id="block-pane-epa-admin-public-alert-message" class="block block-pane  block-pane-epa-admin-public-alert-message block-alert">
+  
+  
+  
+  
+      
+</div>
+<div id="block-pane-epa-gtm" class="block block-pane  block-pane-epa-gtm">
+  
+  
+  
+  
+    <!-- Google Tag Manager -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-L8ZB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+"//www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,"script","dataLayer","GTM-L8ZB");</script>
+<!-- End Google Tag Manager -->  
+</div>
+  </div>
+<header class="masthead clearfix" role="banner">
+
+      <img class="site-logo" src="../sites/all/themes/epa/logo.png" alt="" />
+  
+  
+  <hgroup class="site-name-and-slogan">
+      <h1 class="site-name">
+
+      
+      <a href="../index.html" title="Go to the home page" rel="home">      <span>US EPA</span>
+      </a>
+    </h1>
+  
+      <div class="site-slogan">United States Environmental Protection Agency</div>
+  
+  </hgroup>
+  
+  
+  <div class="region-header">  <div id="block-epa-core-gsa-epa-search" class="block block-epa-core  block-epa-core-gsa-epa-search">
+  
+  
+  
+  
+    <form class="epa-search" method="get" action="https://search.epa.gov/epasearch/epasearch">
+  <label class="element-hidden" for="search-box">Search</label>
+  <input class="form-text" placeholder="Search EPA.gov" name="querytext" id="search-box" value=""/>
+  <button class="epa-search-button" id="search-button" type="submit" title="Search">Search</button>
+  <input type="hidden" name="areaname" value="" />
+  <input type="hidden" name="areacontacts" value="" />
+  <input type="hidden" name="areasearchurl" value="" />
+  <input type="hidden" name="typeofsearch" value="epa" />
+  <input type="hidden" name="result_template" value="2col.ftl" />
+  </form>  
+</div>
+  </div>
+</header>
+<section id="main-content" class="main-content clearfix" role="main" lang="en">
+  <h2 class="microsite-name">Clean Power Plan</h2>  
+  
+  <div class="region-preface clearfix">  <div id="block-pane-social-sharing" class="block block-pane  block-pane-social-sharing">
+
+  
+  
+    <ul class="menu utility-menu">
+    <li id="share" class="menu-item">
+        <button class="share-button">Share</button>
+        <ul>
+            <li class="share-facebook">
+                <a class="share-link" href="https://www.facebook.com/sharer.php?u=https://www.epa.gov/cleanpowerplan/fact-sheet-overview-clean-power-plan&t=FACT SHEET: Overview of the Clean Power Plan" title="Share this page" target="_blank">Facebook</a>
+            </li>
+            <li class="share-twitter">
+                <a class="share-link" href="https://twitter.com/intent/tweet?original_referer=https://www.epa.gov/cleanpowerplan/fact-sheet-overview-clean-power-plan&text=FACT SHEET: Overview of the Clean Power Plan&url=https://www.epa.gov/cleanpowerplan/fact-sheet-overview-clean-power-plan&via=EPA&count=none&lang=en" title="Tweet this page" target="_blank">Twitter</a>
+            </li>
+            <li class="share-googleplus">
+                <a class="share-link" href="https://plus.google.com/share?url=https://www.epa.gov/cleanpowerplan/fact-sheet-overview-clean-power-plan" title="Plus 1 this page" target="_blank">Google+</a>
+            </li>
+            <li class="share-pinterest">
+                <a class="share-link" href="https://pinterest.com/pin/create/button/?url=https://www.epa.gov/cleanpowerplan/fact-sheet-overview-clean-power-plan&description=FACT SHEET: Overview of the Clean Power Plan&media=https://www.epa.gov/sites/all/themes/epa/img/epa-seal.png" title="Pin this page" target="_blank">Pinterest</a>
+            </li>
+        </ul>
+    </li>
+</ul>  
+</div>
+<div id="block-pane-epa-web-area-connect" class="block block-pane  block-pane-epa-web-area-connect">
+
+  
+  
+    <ul class="menu utility-menu"><li class="menu-item"><a href="../node/39389.html" class="menu-link">Contact Us</a></li></ul>  
+</div>
+  </div>
+    <div class="main-column clearfix">
+            
+          <!--googleon: all-->
+      <h1  class="page-title">FACT SHEET: Overview of the Clean Power Plan</h1>
+      <!--googleoff: all-->
+    
+            
+    
+    <!--googleon: all-->
+    
+  
+    
+
+
+
+
+<div class="panel-pane pane-node-content" >
+
+  
+  
+  
+  
+  
+  <div class="pane-content">
+    <article class="node node-document clearfix view-mode-full" about="/cleanpowerplan/fact-sheet-overview-clean-power-plan" typeof="sioc:Item foaf:Document" role="article">
+
+  
+  <h2>CUTTING CARBON POLLUTION FROM POWER PLANTS</h2>
+
+<hr /><div class="box multi related-info right">
+	<h2 class="pane-title">More Information</h2>
+
+	<div class="pane-content">
+		<ul><li><a href="fact-sheet-overview-clean-power-plan.html#print">Download and print this fact sheet</a></li>
+		</ul></div>
+</div>
+
+<p>On August 3, 2015, President Obama and EPA announced the Clean Power Plan – a historic and important step in reducing carbon pollution from power plants that takes real action on climate change. Shaped by years of unprecedented outreach and public engagement, the final Clean Power Plan is fair, flexible and designed to strengthen the fast-growing trend toward cleaner and lower-polluting American energy. With strong but achievable standards for power plants, and customized goals for states to cut the carbon pollution that is driving climate change, the Clean Power Plan provides national consistency, accountability and a level playing field while reflecting each state’s energy mix. It also shows the world that the United States is committed to leading global efforts to address climate change.</p>
+
+<h3>What is the Clean Power Plan?</h3>
+
+<ul><li>The Clean Power Plan will reduce carbon pollution from power plants, the nation’s largest source, while maintaining energy reliability and affordability. Also on August 3, EPA issued final Carbon Pollution Standards for new, modified, and reconstructed power plants, and proposed a Federal Plan and model rule to assist states in implementing the Clean Power Plan.</li>
+	<li>These are the first-ever national standards that address carbon pollution from power plants.</li>
+	<li>The Clean Power Plan cuts significant amounts of power plant carbon pollution and the pollutants that cause the soot and smog that harm health, while advancing clean energy innovation, development and deployment, and laying the foundation for the long-term strategy needed to tackle the threat of climate change. By providing states and utilities ample flexibility and the time needed to achieve these pollution cuts, the Clean Power Plan offers the power sector the ability to optimize pollution reductions while maintaining a reliable and affordable supply of electricity for ratepayers and businesses.</li>
+	<li>Fossil fuels will continue to be a critical component of America’s energy future. The Clean Power Plan simply makes sure that fossil fuel-fired power plants will operate more cleanly and efficiently, while expanding the capacity for zero- and low-emitting power sources.</li>
+	<li>The final rule is the result of unprecedented outreach to states, tribes, utilities, stakeholders and the public, including more than 4.3 million comments EPA received on the proposed rule. The final Clean Power Plan reflects that input, and gives states and utilities time to preserve ample, reliable and affordable power for all Americans.</li>
+</ul><h3>Why we Need the Clean Power Plan</h3>
+
+<ul><li>In 2009, EPA determined that greenhouse gas pollution threatens Americans' health and welfare by leading to long-lasting changes in our climate that can have a range of negative effects on human health and the environment. Carbon dioxide (CO<sub>2</sub>) is the most prevalent greenhouse gas pollutant, accounting for nearly three-quarters of global greenhouse gas emissions and 82 percent of U.S. greenhouse gas emissions.</li>
+	<li>Climate change is one of the greatest environmental and public health challenges we face. Climate impacts affect all Americans’ lives – from stronger storms to longer droughts and increased insurance premiums, food prices and allergy seasons.</li>
+	<li>2014 was the hottest year in recorded history, and 14 of the 15 warmest years on record have all occurred in the first 15 years of this century.  Recorded temperatures in the first half of 2015 were also warmer than normal.</li>
+	<li>Overwhelmingly, the best scientists in the world, relying on troves of data and millions of measurements collected over the course of decades on land, in air and water, at sea and from space, are telling us that our activities are causing climate change.</li>
+	<li>The most vulnerable among us – including children, older adults, people with heart or lung disease and people living in poverty – may be most at risk from the impacts of climate change.</li>
+	<li>Fossil fuel-fired power plants are by far the largest source of U.S. CO<sub>2</sub> emissions, making up 31 percent of U.S. total greenhouse gas emissions.</li>
+	<li>Taking action now is critical. Reducing CO<sub>2</sub> emissions from power plants, and driving investment in clean energy technologies strategies that do so, is an essential step in lessening the impacts of climate change and providing a more certain future for our health, our environment, and future generations.</li>
+</ul><h3>Benefits of Implementing the Clean Power Plan</h3>
+
+<ul><li>The transition to clean energy is happening faster than anticipated. This means carbon and air pollution are already decreasing, improving public health each and every year.</li>
+	<li>The Clean Power Plan accelerates this momentum, putting us on pace to cut this dangerous pollution to historically low levels in the future.</li>
+	<li>When the Clean Power Plan is fully in place in 2030, carbon pollution from the power sector will be 32 percent below 2005 levels, securing progress and making sure it continues.</li>
+	<li>The transition to cleaner sources of energy will better protect Americans from other harmful air pollution, too. By 2030, emissions of sulfur dioxide from power plants will be 90 percent lower compared to 2005 levels, and emissions of nitrogen oxides will be 72 percent lower. Because these pollutants can create dangerous soot and smog, the historically low levels mean we will avoid thousands of premature deaths and have thousands fewer asthma attacks and hospitalizations in 2030 and every year beyond.</li>
+	<li>Within this larger context, the Clean Power Plan itself is projected to contribute significant pollution reductions, resulting in important benefits, including:
+		<ul><li>Climate benefits of $20 billion</li>
+			<li>Health benefits of $14-$34 billion</li>
+			<li>Net benefits of $26-$45 billion</li>
+		</ul></li>
+	<li>Because carbon pollution comes packaged with other dangerous air pollutants, the Clean Power Plan will also protect public health, avoiding each year:
+		<ul style="list-style-type:circle"><li>3,600 premature deaths</li>
+			<li>1,700 heart attacks</li>
+			<li>90,000 asthma attacks</li>
+			<li>300,000 missed work days and school days</li>
+		</ul></li>
+</ul><h3>How the Clean Power Plan Works</h3>
+
+<ul><li>The Clean Air Act – under section 111(d) – creates a partnership between EPA, states, tribes and U.S. territories – with EPA setting a goal and states and tribes choosing how they will meet it.</li>
+	<li>The final Clean Power Plan follows that approach. EPA is establishing interim and final carbon dioxide (CO<sub>2</sub>) emission performance rates for two subcategories of fossil fuel-fired electric generating units (EGUs):
+		<ul style="list-style-type:circle"><li>Fossil fuel-fired electric steam generating units (generally, coal- and oil-fired power plants)</li>
+			<li>Natural gas-fired combined cycle generating units</li>
+		</ul></li>
+	<li>To maximize the range of choices available to states in implementing the standards and to utilities in meeting them, EPA is establishing interim and final statewide goals in three forms:
+		<ul style="list-style-type:circle"><li>A rate-based state goal measured in pounds per megawatt hour (lb/MWh);</li>
+			<li>A mass-based state goal measured in total short tons of CO<sub>2</sub>;</li>
+			<li>A mass-based state goal with a new source complement measured in total short tons of CO<sub>2</sub>.</li>
+		</ul></li>
+	<li>States then develop and implement plans that ensure that the power plants in their state – either individually, together or in combination with other measures – achieve the interim CO<sub>2</sub> emissions performance rates over the period of 2022 to 2029 and the final CO<sub>2</sub> emission performance rates, rate-based goals or mass-based goals by 2030.</li>
+	<li>These final guidelines are consistent with the law and align with the approach that Congress and EPA have always taken to regulate emissions from this and all other industrial sectors – setting source-level, source category-wide standards that sources can meet through a variety of technologies and measures.</li>
+</ul><h3>How EPA Determined Emission Performance Rates</h3>
+
+<ul><li>Under section 111(d) of the Clean Air Act, EPA determines the best system of emissions reduction (BSER) that has been demonstrated for a particular pollutant and a particular group of sources by examining technologies and measures already being used.</li>
+	<li>Consistent with previous BSER determinations in 111(d) rulemakings, the agency considered the types of strategies, technologies and measures that states and utilities are already using to reduce CO<sub>2</sub> from fossil fuel-fired power plants.</li>
+	<li>In the final Clean Power Plan, EPA determined that BSER consists of three building blocks:
+		<ul style="list-style-type:circle"><li><strong>Building Block 1</strong> - reducing the carbon intensity of electricity generation by improving the heat rate of existing coal-fired power plants.</li>
+			<li><strong>Building Block 2</strong> -substituting increased electricity generation from lower-emitting existing natural gas plants for reduced generation from higher-emitting coal-fired power plants.</li>
+			<li><strong>Building Block 3</strong> - substituting increased electricity generation from new zero-emitting renewable energy sources (like wind and solar) for reduced generation from existing coal-fired power plants.</li>
+		</ul></li>
+	<li>In determining the BSER, EPA considered the ranges of reductions that can be achieved at coal, oil and gas plants at a reasonable cost by application of each building block, taking into account how quickly and to what extent the measures encompassed by the building blocks could be used to reduce emissions.</li>
+	<li><span
+    class="figure image file file-image file-image-jpeg right view-mode-medium" style="width:448px;"><img alt="Map of the three U.S. regional electricity interconnects - the Western interconnection, the Eastern interconnection and the Electricity Reliability Council of Texas interconnection " height="336" width="448" class="right media-element file-medium right" typeof="foaf:Image" src="https://www.epa.gov/sites/production/files/styles/medium/public/2015-08/nerc_map.jpg" title="" /></span>In assessing the BSER, EPA recognized that power plants operate through broad interconnected regional grids that determine the generation and distribution of power, and thus the agency based its analysis on the three established regional electricity interconnects: the Western interconnection, the Eastern interconnection and the Electricity Reliability Council of Texas interconnection.</li>
+	<li>EPA applied the building blocks to all of the coal plants and all of the natural gas power plants in each region to produce regional emission performance rates for each category.</li>
+	<li>From the three resulting regional coal plant rates, and the three regional natural gas power plant rates, EPA chose the most readily achievable rate for each category to arrive at equitable CO<sub>2</sub> emission performance rates for the country that represent the best system of emission reductions.</li>
+	<li>The same CO<sub>2</sub> emission performance rates were then applied to all affected sources in each state to arrive at individual statewide rate-based and mass-based goals. Each state has a different goal based upon its own particular mix of affected sources.</li>
+	<li>The agency is setting emission performance standards for tribes with affected EGUs—Navajo, Fort Mojave, and Ute (Uintah and Ouray).  At this time, EPA is not setting CO<sub>2</sub> emission performance goals for Alaska, Hawaii, Guam or Puerto Rico so that the agency can continue to collect data that can form the basis of standards for power plants there in the future.</li>
+</ul><h3>State Plans</h3>
+
+<ul><li>The final Clean Power Plan provides guidelines for the development, submittal and implementation of state plans that establish standards of performance or other measures for affected EGUs in order to implement the interim and final CO<sub>2</sub> emission performance rates.</li>
+	<li>States must develop and implement plans that ensure the power plants in their state – either individually, together, or in combination with other measures – achieve the equivalent, in terms of either or rate or mass, of the interim CO<sub>2</sub> performance rates between 2022 and 2029, and the final CO<sub>2</sub> emission performance rates for their state by 2030.</li>
+	<li>States may choose between two plan types to meet their goals:
+		<ul style="list-style-type:circle"><li><strong>Emission standards plan</strong>– includes source-specific requirements ensuring all affected power plants within the state meet their required emissions performance rates or state-specific rate-based or mass-based goal.</li>
+			<li><strong>State measures plan</strong>– includes a mixture of measures implemented by the state, such as renewable energy standards and programs to improve residential energy efficiency that are not included as federally enforceable components of the plan.  The plan may also include federally enforceable source-specific requirements. The state measures, alone or in conjunction with federally enforceable requirements, must result in affected power plants meeting the state’s mass-based goal. The plan must also include a backstop of federally enforceable standards on affected power plants that fully meet the emission guidelines and that would be triggered if the state measures fail to result in the affected plants achieving the required emissions reductions on schedule. States may use the final model rule, which EPA proposed on August 3, for their backstop.</li>
+		</ul></li>
+	<li>In developing its plan, each state will have the flexibility to select the measures it prefers in order to achieve the CO<sub>2</sub> emission performance rates for its affected plants or meet the equivalent statewide rate- or mass-based CO<sub>2</sub> goal.  States will also have the ability to shape their own emissions reduction pathways over the 2022-29 period.</li>
+	<li>The final rule also gives states the option to work with other states on multi-state approaches, including emissions trading, that allow their power plants to integrate their interconnected operations within their operating systems and their opportunities to address carbon pollution.</li>
+	<li>The flexibility of the rule allows states to reduce costs to consumers, minimize stranded assets and spur private investments in renewable energy and energy efficiency technologies and businesses.</li>
+	<li>States can tailor their plans to meet their respective energy, environmental and economic needs and goals, and those of their local communities by:
+		<ul style="list-style-type:circle"><li>relying on a diverse set of energy resources;</li>
+			<li>protecting electric system reliability;</li>
+			<li>providing affordable electricity; and</li>
+			<li>recognizing investments that states and power companies are already making.</li>
+		</ul></li>
+</ul><h3>Emissions Trading</h3>
+
+<ul><li>One cost-effective way that states can meet their goals is emissions trading, through which affected power plants may meet their emission standards via emission rate credits (for a rate-based standard) or allowances (for a mass-based standard).</li>
+	<li>Trading is a proven approach to address pollution and provides states and affected plants with another mechanism to achieve their emission standards. Emission trading is a market-based policy tool that creates a financial incentive to reduce emissions where the costs of doing so are the lowest and clean energy investment enjoys the highest leverage.</li>
+	<li>Market-based approaches are generally recognized as having the following benefits:
+		<ul style="list-style-type:circle"><li>Reduce the cost of compliance</li>
+			<li>Create incentives for early reduction</li>
+			<li>Create incentives for emission reductions beyond those required</li>
+			<li>Promote innovation, and</li>
+			<li>Increase flexibility and ensure reliability</li>
+		</ul></li>
+	<li>In addition to including mass-based state goals to clear the path for mass-based trading plans, the final rule gives states the opportunity to design state rate-based or mass-based plans that will make their units “trading ready,” allowing individual power plants to use out-of-state reductions – in the form of credits or allowances, depending on the plan type – to achieve required CO<sub>2</sub> reductions, without the need for up-front interstate agreements.</li>
+	<li>EPA is committed to supporting states in the tracking of emissions, as well as tracking allowances and credits, to help implement multi-state trading or other approaches.</li>
+</ul><h3>Reliability Assurance</h3>
+
+<ul><li>The final rule has several features that reflect EPA’s commitment to ensuring that compliance with the final rule does not interfere with the industry’s ability to maintain the reliability of the nation’s electricity supply:
+		<ul style="list-style-type:circle"><li>A long compliance period, and phased-in reduction requirements, providing sufficient time and flexibility for the planning and investment needed to maintain system reliability.</li>
+			<li>A basic design that allows states and affected EGUs flexibility to include a large variety of approaches and measures to achieve the environmental goals in a way that is tailored to each state’s and utility’s energy resources and policies, including trading within and between states, and other multi-state approaches that support electric system reliability.</li>
+			<li>A requirement that each state demonstrate in its final plan that it has considered reliability issues in developing its plan.</li>
+			<li>A mechanism for a state to seek a revision to its plan in case unanticipated or significant reliability challenges arise. </li>
+			<li>A reliability safety valve to address situations where, in the wake of an unanticipated event or other extraordinary circumstances, an affected power plant must provide reliability-critical generation notwithstanding CO<sub>2</sub> emissions constraints that would otherwise apply.</li>
+		</ul></li>
+	<li>In addition to the measures outlined in the rule EPA, the Department of Energy (DOE) and the Federal Energy Regulatory Commission (FERC) are coordinating efforts to monitor the implementation of the final rule to help preserve continued reliable electricity generation and transmission.</li>
+</ul><h3>State Plan Timing</h3>
+
+<ul><li>States will be required to submit a final plan, or an initial submittal with an extension request, by September 6, 2016.</li>
+	<li>Final complete state plans must be submitted no later than September 6, 2018.</li>
+	<li>The final rule provides 15 years for full implementation of all emission reduction measures, with incremental steps for planning and demonstration that will ensure progress is being made in achieving CO<sub>2</sub> emission reductions.</li>
+	<li>Each state plan must include provisions that will allow the state to demonstrate that the plan is making progress toward meeting the 2030 goal.  The Clean Power Plan offers several options for states to show their progress for meeting interim CO<sub>2</sub> emission performance rates or state CO<sub>2</sub> emission interim step goals.</li>
+	<li>In addition to offering three multi-year “step down” goals within the interim period, the final rule also allows states to apply measures in a gradual way that that they determine is the most cost-effective and feasible.</li>
+	<li>During the interim period states are required periodically to compare emission levels achieved by their affected power plants with emission levels projected in the state plan and report results to EPA.</li>
+</ul><h3>Helping Communities Benefit from Clean Energy</h3>
+
+<ul><li>The Clean Power Plan gives states the opportunity to ensure that communities share in the benefits of a clean energy economy, including energy efficiency and renewable energy.</li>
+	<li>EPA is creating a Clean Energy Incentive Program (CEIP) to reward early investments in wind and solar generation, as well as demand-side energy efficiency programs implemented in low-income communities, that deliver results during 2020 and/or 2021.</li>
+	<li>Through this program, EPA intends to make allowances or emission rate credits (ERCs) available to states that incentivize these investments. EPA is providing additional incentives to encourage energy efficiency investments in low-income communities.</li>
+</ul><h3>Community Involvement and Environmental Justice</h3>
+
+<ul><li>The final rule reflects two years of unprecedented outreach and engagement with stakeholders and the public, and incorporates changes directly responsive to stakeholders’ critical concerns and priorities.</li>
+	<li>Public engagement was essential throughout the development of the Clean Power Plan, and EPA will continue to engage with communities and the public now that the rule is final.</li>
+	<li>To ensure opportunities for communities – particularly low-income communities, minority communities and tribal communities – to continue to participate in decision making, EPA is requiring that states demonstrate how they are actively engaging with communities as part of their public participation process in the formulation of state plans.</li>
+	<li>The requirement for meaningful engagement within state plans will provide an avenue for all communities to both hear from the state about strategies that might work best to tackle climate pollution, and to provide input on where possible impacts to low-income communities, minority communities, and tribal communities could occur along with strategies to mitigate those impacts. </li>
+	<li>The final rule includes information on communities living near power plants, and EPA will provide additional information to facilitate engagement between communities and states as implementation of the Clean Power Plan moves forward. For example, the agency will provide guidance on strategies states can use to meaningfully engage with communities, along with other resources and information, on a portal web page the agency will develop for communities’ use.</li>
+	<li>As implementation of the Clean Power Plan goes forward, the agency will conduct air quality evaluations to determine impacts that state plans may have on vulnerable communities. EPA encourages states to conduct analyses to help states, communities and utilities understand the potential localized and community impacts of state plans.</li>
+	<li>To help with these analyses, EPA will ensure emissions data is available and easily accessed through the Clean Power Plan Communities Portal web page. The agency also will provide demographic information and other data, along with examples analyses that states have conducted to assess the impact of other rules.</li>
+</ul><hr /><p><strong><a name="print" id="print"></a>Printable version of the fact sheet:</strong></p>
+<span class="disclaimer pdf">You will need Adobe Reader to view some of the files on this page. See <a href="../epahome/pdf.html">EPA’s About PDF page</a> to learn more.</span>
+<ul class="field field-name-field-file field-type-file field-label-hidden">
+
+      <li>
+      <span id="file-173771" class="file file-document file-application-pdf"><a href="https://www.epa.gov/sites/production/files/2015-08/documents/fs-cpp-overview.pdf" type="application/pdf; length=653242" class="file-link">EPA Fact Sheet: Overview of the Clean Power Plan Final Rule (PDF)</a><span class="fileinfo">(9 pp, 653 K)</span></span>
+    </li>
+  
+</ul>
+</article>
+  </div>
+
+  
+  
+</div>
+
+
+
+<div id="block-pane-epa-web-area-footer" class="block block-pane  block-pane-epa-web-area-footer">
+  
+  
+  
+  
+    <p class="web-area-footer"><a href="../node/39389.html" class="contact-us">Contact Us</a> to ask a question, provide feedback, or report a problem.</p>  
+</div>
+  
+    <!--googleoff: all-->
+      </div>
+  
+  
+  <div class="region-sidebar-first region-sidebar">  <div id="block-og-menu-og-single-menu-block" class="block block-og-menu  block-og-menu-og-single-menu-block">
+
+      <h2 class="element-invisible">Carbon Pollution Standards</h2>
+  
+  
+    <ul class="menu"><li class="menu-item"><a href="../node/40801.html" title="" class="menu-node-unpublished menu-link">Clean Power Plan Home</a></li>
+<li class="menu-item"><a href="../node/40169.html" class="menu-node-unpublished menu-link">Learn About Carbon Pollution From Power Plants</a></li>
+<li class="menu-item"><a href="../node/40137.html" class="menu-node-unpublished menu-link">Regulatory Actions</a><ul class="menu"><li class="menu-item"><a href="../node/96365.html" title="" class="menu-link">Clean Power Plan</a></li>
+<li class="menu-item"><a href="carbon-pollution-standards-new-modified-and-reconstructed-power-plants.html" title="" class="menu-link">Carbon Pollution Standards</a></li>
+</ul></li>
+<li class="menu-item"><a href="../node/45751.html" title="" class="menu-link">Clean Power Plan Toolbox for States</a></li>
+<li class="menu-item"><a href="../node/99921.html" class="menu-node-unpublished menu-link">Clean Power Plan Community Page</a></li>
+</ul>  
+</div>
+  </div>
+</section>
+
+  <nav class="nav simple-nav simple-main-nav" role="navigation">
+    <div class="nav__inner">
+      <h2 class="element-invisible">Main menu</h2><ul class="menu"><li class="expanded menu-item"><a href="../learn-issues.1.html" title="View links to the most popular pages for each of EPA’s top environmental topics." class="menu-link">Environmental Topics</a><ul class="menu"><li class="menu-item"><a href="../learn-issues/learn-about-air.html" title="" class="menu-link">Air</a></li>
+<li class="menu-item"><a href="../node/17591.html" title="" class="menu-link">Bed Bugs</a></li>
+<li class="menu-item"><a href="../learn-issues/learn-about-chemicals-and-toxics.html" title="" class="menu-link">Chemicals and Toxics</a></li>
+<li class="menu-item"><a href="../climatechange/index.html" title="" class="menu-link">Climate Change</a></li>
+<li class="menu-item"><a href="../node/165443.html" title="" class="menu-link">Environmental Information by Location</a></li>
+<li class="menu-item"><a href="../learn-issues/greener-living-resources.html" title="" class="menu-link">Greener Living</a></li>
+<li class="menu-item"><a href="../learn-issues/learn-about-health-and-safety.html" title="" class="menu-link">Health</a></li>
+<li class="menu-item"><a href="../learn-issues/learn-about-waste.html" title="" class="menu-link">Land, Waste, and Cleanup</a></li>
+<li class="menu-item"><a href="../lead/index.html" title="" class="menu-link">Lead</a></li>
+<li class="menu-item"><a href="../mold/mold_remediation.html" title="" class="menu-link">Mold</a></li>
+<li class="menu-item"><a href="../pesticides/health/index.htm" title="" class="menu-link">Pesticides</a></li>
+<li class="menu-item"><a href="../radon/pubs/citguide.html" title="" class="menu-link">Radon</a></li>
+<li class="menu-item"><a href="../learn-issues/water-resources.html" title="" class="menu-link">Water</a></li>
+<li class="menu-item"><a href="../node/164885.html" title="" class="menu-link">A-Z Index</a></li>
+</ul></li>
+<li class="menu-item"><a href="../lawsregs/guidance/wetlands/mining.cfm.html" title="View links to regulatory information by topic and sector, and to top pages about environmental laws, regulations, policies, compliance, and enforcement." class="menu-link">Laws &amp; Regulations</a><ul class="menu"><li class="menu-item"><a href="../node/3173.html" title="" class="menu-link">By Business Sector</a></li>
+<li class="menu-item"><a href="../node/66677.html" title="" class="menu-link">By Topic</a></li>
+<li class="menu-item"><a href="../node/19411.html" title="" class="menu-link">Compliance</a></li>
+<li class="menu-item"><a href="../node/10885.html" title="" class="menu-link">Enforcement</a></li>
+<li class="menu-item"><a href="../node/66719.html" title="" class="menu-link">Laws and Executive Orders</a></li>
+<li class="menu-item"><a href="../node/11139.html" title="" class="menu-link">Policy and Guidance</a></li>
+<li class="menu-item"><a href="../node/11249.html" title="" class="menu-link">Regulations</a></li>
+</ul></li>
+<li class="expanded menu-item"><a href="https://www.epa.gov/aboutepa" title="Learn more about our mission, organization, and locations." class="menu-link">About EPA</a><ul class="menu"><li class="menu-item"><a href="https://www.epa.gov/aboutepa/epas-acting-administrator" title="" class="menu-node-unpublished menu-link">EPA Administrator</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa/current-epa-leadership" title="" class="menu-link">Current Leadership</a></li>
+<li class="menu-item"><a href="../epahome/locate1.htm" title="" class="menu-link">Organization Chart</a></li>
+<li class="menu-item"><a href="http://cfpub.epa.gov/locator/index.cfm" title="" class="menu-link">Staff Directory</a></li>
+<li class="menu-item"><a href="../node/863.html" title="" class="menu-link">Planning, Budget and Results</a></li>
+<li class="menu-item"><a href="../node/32663.html" title="" class="menu-link">Jobs and Internships</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa#pane-2" title="" class="menu-link">Headquarters Offices</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa#pane-4" title="" class="menu-link">Regional Offices</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa#pane-5" title="" class="menu-link">Labs and Research Centers</a></li>
+</ul></li>
+</ul>    </div>
+  </nav>
+
+
+<footer class="main-footer clearfix" role="contentinfo">
+  <div class="main-footer__inner">
+    
+  
+  <div class="region-footer">  <div id="block-pane-epa-global-footer" class="block block-pane  block-pane-epa-global-footer">
+  
+  
+  
+  
+    <div class="row cols-3">
+  <div class="col size-1of3">
+    <div class="col__title">Discover.</div>
+    <ul class="menu">
+      <li><a href="../node/39087.html">Accessibility</a></li>
+      <li><a href="https://www.epa.gov/aboutepa/administrator-gina-mccarthy">EPA Administrator</a></li>
+      <li><a href="../node/863.html">Budget &amp; Performance</a></li>
+      <li><a href="../oam/ptod/activeindex.htm">Contracting</a></li>
+      <li><a href="../home/grants-and-other-funding-opportunities.html">Grants</a></li>
+      <li><a href="https://www.epa.gov/ocr/whistleblower-protections-epa-and-how-they-relate-non-disclosure-agreements-signed-epa-employees">No FEAR Act Data</a></li>
+      <li><a href="../node/383.html">Privacy and Security</a></li>
+    </ul>
+  </div>
+  <div class="col size-1of3">
+    <div class="col__title">Connect.</div>
+    <ul class="menu">
+      <li><a href="https://www.data.gov/">Data.gov</a></li>
+      <li><a href="../node/44743.html">Inspector General</a></li>
+      <li><a href="../node/32663.html">Jobs</a></li>
+      <li><a href="https://www.epa.gov/newsroom">Newsroom</a></li>
+      <li><a href="../open.html">Open Government</a></li>
+      <li><a href="https://www.regulations.gov/">Regulations.gov</a></li>
+      <li><a href="https://www.epa.gov/newsroom/email-subscriptions">Subscribe</a></li>
+      <li><a href="https://www.usa.gov/">USA.gov</a></li>
+      <li><a href="https://www.whitehouse.gov/">White House</a></li>
+    </ul>
+  </div>
+  <div class="col size-1of3">
+    <div class="col__title">Ask.</div>
+    <ul class="menu">
+      <li><a href="../home/forms/contact-us.html">Contact Us</a></li>
+      <li><a href="../node/45821.html">Hotlines</a></li>
+      <li><a href="../node/40665.html">FOIA Requests</a></li>
+      <li><a href="../node/1623.html">Frequent Questions</a></li>
+    </ul>
+
+    <div class="col__title">Follow.</div>
+    <ul class="social-menu">
+      <li><a class="menu-link social-facebook" href="https://www.facebook.com/EPA">Facebook</a></li>
+      <li><a class="menu-link social-twitter" href="https://twitter.com/epa">Twitter</a></li>
+      <li><a class="menu-link social-youtube" href="https://www.youtube.com/user/USEPAgov">YouTube</a></li>
+      <li><a class="menu-link social-flickr" href="https://www.flickr.com/photos/usepagov">Flickr</a></li>
+      <li><a class="menu-link social-instagram" href="https://www.instagram.com/epagov">Instagram</a></li>
+    </ul>
+
+    <p class="last-updated">Last updated on June 27, 2016</p>
+  </div>
+</div>  
+</div>
+  </div>
+  </div>
+</footer>
+  <script type="text/javascript" src="../sites/production/files/js/js_LcFRnnSHVah-Aw_WQ8aVLXhp3HPJvrOe4h6YEXA5BT8.js"></script>
+<script type="text/javascript" src="../sites/production/files/js/js_oZD9-WvfiElJ5KPavqu9ZAQiZcfWlzNCzxFHpedR9dI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/production/files/js/js_slEmfY49PYt03JJafrjvmxmEfVQE7vqI-454V7NM5ys.js"></script>
+<script type="text/javascript" src="../sites/all/modules/custom/epa_core/js/alert.js%3Fokbvd7"></script>
+<script type="text/javascript" src="../sites/production/files/js/js_cjmkhjdYj9qyv8rH-ylGyD-SIMacZ-dzdqW9m8x_TEc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName('script')[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0005/9240.js";
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+      
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/production/files/js/js_UG00nMwTXcewn_yu8c3s7Bgbxmhbdk0BE1GwQLAuoQU.js"></script>
+<script type="text/javascript" src="../sites/production/files/js/js_CaVFOiO3QpcJYEzSDhR3RmEeSnMbgnImgh5uEDkDD_0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"epa","theme_token":"k-OWJ7ppVOMunqNnHaqMI8qo3yG_uBFJRcmCisJ_WG8"},"epa_wysiwyg":{"site_default_lang":"en"},"add_definitions":{"path":"sites\/all\/modules\/custom\/add_definitions","dictionary_filter":"1","dictionary_undo":"1","dictionary_occurrences":"1","service_endpoint":"https:\/\/termlookup.epa.gov\/termlookup\/v1\/terms"},"ogContext":{"groupType":"node","gid":"40801"}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script src="/sites/all/themes/epa/js/ie.js"></script><![endif]--><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ead36e43ac","applicationID":"21951268","transactionName":"YABRbUoFXRBYAUNeXllKclpMDVwNFhJWUFRoCFJXWQNWEWYMWFNUaBNaXE87QwJeBw==","queueTime":0,"applicationTime":4549,"atts":"TEdSGwIfTh4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
