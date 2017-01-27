@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<!--[if IEMobile 7]><html class="iem7 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)]><!--> <html class="no-js not-oldie" lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="../sites/all/themes/epa/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width" />
+<meta name="MobileOptimized" content="width" />
+<meta http-equiv="ImageToolbar" content="false" />
+<meta http-equiv="cleartype" content="on" />
+<!--googleon: all--><meta name="DC.description" content="Exercises and procedures on setting up and using the MS_Combo Wizard. The MS_Combo model provides BMD and BMDL estimates for the risk of getting one or more tumors for any combination of tumors observed in a single bioassay." />
+<meta name="DC.title" content="Multiple-Tumor Analysis with MS_Combo Model (Use with BMDS Wizard)" />
+<!--googleoff: snippet--><meta name="keywords" content="risk assessment, BMDS Quick Start Guide" />
+<link rel="canonical" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html" />
+<link rel="shortlink" href="https://www.epa.gov/node/88133" />
+<meta name="DC.language" content="en" />
+<meta name="DC.Subject.epachannel" content="Science &amp; Technology" />
+<meta name="DC.type" content="Data and Tools" />
+<meta name="DC.date.created" content="2015-06-08" />
+<meta name="DC.date.modified" content="2016-09-08" />
+<meta name="DC.date.reviewed" content="2017-09-08" />
+<meta name="DC.creator" content="US EPA,ORD,NCEA,NCEA-RTP" />
+<meta name="WebArea" content="Benchmark Dose Software" />
+<meta name="WebAreaType" content="Microsite" />
+<meta name="ContentType" content="page" />
+  <title>Multiple-Tumor Analysis with MS_Combo Model (Use with BMDS Wizard) | Benchmark Dose Software (BMDS) | US EPA</title>
+  <!--googleoff: all-->
+  <link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_3h5HfPyG4w0xmgk_oaLP90_rUIs7Xmed0sNIfCxGAyg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_NFNG4tEiKv-n_hlnQ4iBNlFbb-9XRaRVA9wRk6nUPHY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_Pvo-DHIdW2Qn9LljtH2R1QKqzm8QoJ18zl6wR9Dk-Ak.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_28CvFue6tf4M8aL9zid2j2W58Z6HleySMQyNH35QhI0.css" media="all" />
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="https://www.epa.gov/sites/production/files/css/css_H7Qs31C_4pOAKdUe1sAA01nOyZTqO_KOIt1uDr0iKB4.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="../sites/production/files/css/css_68w49Vk1SYPj8EPx2iW8fUagDJ4xc2WJQO7Dn7aLNaU.css" media="all" />
+  <link rel="alternate" type="application/atom+xml" title="EPA.gov All Press Releases" href="https://www.epa.gov/newsreleases/search/rss" />
+  <link rel="alternate" type="application/atom+xml" title="EPA.gov Headquarters Press Releases" href="https://www.epa.gov/newsreleases/search/rss/field_press_office/headquarters" />
+  <link rel="alternate" type="application/atom+xml" title="Greenversations, EPA's Blog" href="https://blog.epa.gov/blog/feed/" />
+  <link rel="alternate" type="application/atom+xml" title="Benchmark Dose Software" href="../feed/72261/rss.xml" />  <!--[if lt IE 9]><script src="/sites/all/themes/epa/js/html5.js"></script><![endif]-->  </head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node-88133 node-type-page og-context og-context-node og-context-node-72261 section-bmds microsite" >
+  <div class="skip-links"><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#main-content" class="skip-link element-invisible element-focusable">Jump to main content</a></div>
+      
+  
+  <div class="region-alert">  <div id="block-pane-epa-admin-public-alert-message" class="block block-pane  block-pane-epa-admin-public-alert-message block-alert">
+  
+  
+  
+  
+      
+</div>
+<div id="block-pane-epa-gtm" class="block block-pane  block-pane-epa-gtm">
+  
+  
+  
+  
+    <!-- Google Tag Manager -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-L8ZB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+"//www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,"script","dataLayer","GTM-L8ZB");</script>
+<!-- End Google Tag Manager -->  
+</div>
+  </div>
+<header class="masthead clearfix" role="banner">
+
+      <img class="site-logo" src="../sites/all/themes/epa/logo.png" alt="" />
+  
+  
+  <hgroup class="site-name-and-slogan">
+      <h1 class="site-name">
+
+      
+      <a href="../index.html" title="Go to the home page" rel="home">      <span>US EPA</span>
+      </a>
+    </h1>
+  
+      <div class="site-slogan">United States Environmental Protection Agency</div>
+  
+  </hgroup>
+  
+  
+  <div class="region-header">  <div id="block-epa-core-gsa-epa-search" class="block block-epa-core  block-epa-core-gsa-epa-search">
+  
+  
+  
+  
+    <form class="epa-search" method="get" action="https://search.epa.gov/epasearch/epasearch">
+  <label class="element-hidden" for="search-box">Search</label>
+  <input class="form-text" placeholder="Search EPA.gov" name="querytext" id="search-box" value=""/>
+  <button class="epa-search-button" id="search-button" type="submit" title="Search">Search</button>
+  <input type="hidden" name="areaname" value="" />
+  <input type="hidden" name="areacontacts" value="" />
+  <input type="hidden" name="areasearchurl" value="" />
+  <input type="hidden" name="typeofsearch" value="epa" />
+  <input type="hidden" name="result_template" value="2col.ftl" />
+  </form>  
+</div>
+  </div>
+</header>
+<section id="main-content" class="main-content clearfix" role="main" lang="en">
+  <h2 class="microsite-name">Benchmark Dose Software</h2>  
+  
+  <div class="region-preface clearfix">  <div id="block-pane-social-sharing" class="block block-pane  block-pane-social-sharing">
+
+  
+  
+    <ul class="menu utility-menu">
+    <li id="share" class="menu-item">
+        <button class="share-button">Share</button>
+        <ul>
+            <li class="share-facebook">
+                <a class="share-link" href="https://www.facebook.com/sharer.php?u=https://www.epa.gov/bmds/multiple-tumor-analysis-mscombo-model-use-bmds-wizard&t=Multiple-Tumor Analysis with MS_Combo Model (Use with BMDS Wizard)" title="Share this page" target="_blank">Facebook</a>
+            </li>
+            <li class="share-twitter">
+                <a class="share-link" href="https://twitter.com/intent/tweet?original_referer=https://www.epa.gov/bmds/multiple-tumor-analysis-mscombo-model-use-bmds-wizard&text=Multiple-Tumor Analysis with MS_Combo Model (Use with BMDS Wizard)&url=https://www.epa.gov/bmds/multiple-tumor-analysis-mscombo-model-use-bmds-wizard&via=EPA&count=none&lang=en" title="Tweet this page" target="_blank">Twitter</a>
+            </li>
+            <li class="share-googleplus">
+                <a class="share-link" href="https://plus.google.com/share?url=https://www.epa.gov/bmds/multiple-tumor-analysis-mscombo-model-use-bmds-wizard" title="Plus 1 this page" target="_blank">Google+</a>
+            </li>
+            <li class="share-pinterest">
+                <a class="share-link" href="https://pinterest.com/pin/create/button/?url=https://www.epa.gov/bmds/multiple-tumor-analysis-mscombo-model-use-bmds-wizard&description=Multiple-Tumor Analysis with MS_Combo Model (Use with BMDS Wizard)&media=https://www.epa.gov/sites/all/themes/epa/img/epa-seal.png" title="Pin this page" target="_blank">Pinterest</a>
+            </li>
+        </ul>
+    </li>
+</ul>  
+</div>
+<div id="block-pane-epa-web-area-connect" class="block block-pane  block-pane-epa-web-area-connect">
+
+  
+  
+    <ul class="menu utility-menu"><li class="menu-item"><a href="../node/72263.html" class="menu-link">Contact Us</a></li></ul>  
+</div>
+  </div>
+    <div class="main-column clearfix">
+            
+          <!--googleon: all-->
+      <h1  class="page-title">Multiple-Tumor Analysis with MS_Combo Model (Use with BMDS Wizard)</h1>
+      <!--googleoff: all-->
+    
+            
+    
+    <!--googleon: all-->
+    
+  
+    
+
+
+<div class="row cols-2">
+<div class="col size-3of4">
+<div class="panel-pane pane-node-content" >
+
+  
+  
+  
+  
+  
+  <div class="pane-content">
+    <div class="node node-page clearfix view-mode-full ">
+
+  
+  <p>The BMDS MS_Combo model can be run directly from BMDS or from within the Wizard (versions 1.9 and up). Using the Wizard spreadsheets to run both the individual multistage and MS_Combo models is usually more convenient and faster than using BMDS. This quick start page walks you through the basics of setting up and using the MS_Combo Wizard for analysis.</p>
+
+<p>The MS_Combo model provides <a class="termlookup-tooltip" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#self" occurrence="1">BMD<span class="termlookup-custom"><img alt="Help" src="../sites/all/modules/custom/add_definitions/images/add_definitions_icon_popup_help.png" height="48" width="48" /><em>BMD</em>An exposure due to a dose of a substance associated with a specified low incidence of risk, generally in the range of 1% to 10%, of a health effect; or the dose associated with a specified measure or change of a biological effect.</span></a> and <a class="termlookup-tooltip" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#self" occurrence="1">BMDL<span class="termlookup-custom"><img alt="Help" src="../sites/all/modules/custom/add_definitions/images/add_definitions_icon_popup_help.png" height="48" width="48" /><em>BMDL</em>A lower one-sided confidence limit on the BMD.</span></a> estimates for the risk of getting one or more tumors for any combination of tumors observed in a single bioassay.</p>
+
+<p>The model calculates composite risk: the risk of developing <em><strong>any</strong></em> combination of tumors at <em><strong>any</strong></em> site -- <em><strong>not</strong></em> the risk of developing tumors at every site considered. The model assumes the tumors are <em><strong>independent</strong></em> of each other.</p>
+
+<p>The MS_Combo model generates computed results only. It does not generate a plot or graph.</p>
+
+<ul><li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex1">Exercise 1 - Cancer Data</a>
+
+		<ul><li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex1s1">Step 1 - Run the Multistage Models</a>
+
+				<ul><li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex1q1">Question 1</a></li>
+					<li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex1q2">Question 2</a></li>
+				</ul></li>
+			<li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex1s2">Step 2 - Run the MS_Combo Model</a>
+				<ul><li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex1q3">Question 3</a></li>
+				</ul></li>
+		</ul></li>
+	<li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex2">Exercise 2 - Cancer Data</a>
+		<ul><li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex2s1">Step 1 - Run the Multistage Models</a>
+				<ul><li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex2q1">Question 1</a></li>
+				</ul></li>
+			<li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex2s2">Step 2 - Run the MS_Combo Model</a>
+				<ul><li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex2q2">Question 2</a></li>
+				</ul></li>
+		</ul></li>
+	<li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex3">Exercise 3 - Poly-3 Survival Adjustment</a>
+		<ul><li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex3s1">Step 1 - Run the Multistage Models</a></li>
+			<li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex3s2">Step 2 - Run the MS_Combo Model</a>
+				<ul><li><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#ex3q1">Question</a></li>
+				</ul></li>
+		</ul></li>
+</ul><hr /><h2><a id="ex1" name="ex1"></a>Exercise 1 - Cancer Data</h2>
+
+<p>For this exercise, you will model multiple tumors using two BMDS Wizard templates: the dichotomous-cancer and the MS_Combo.</p>
+
+<ul><li><strong>Step 1</strong> - You will first use three BMDS Wizard dichotomous cancer worksheets to model individual tumor types with the multistage model to determine which degree model best fits the data. This allows individual tumors to be fit with models that best characterize their specific dose-response shapes.</li>
+	<li>
+		<p><strong>Step 2</strong> - Then, you will use the BMDS Wizard MS_Combo worksheet to run an MS_Combo modeling session and view the results.</p>
+	</li>
+</ul><h3><a id="ex1s1" name="ex1s1"></a>Step 1 - Run the Multistage Models</h3>
+
+<ol><li>Create a working directory on your hard drive to hold the files you will use for this exercise.</li>
+	<li>Download and open these three BMDS Wizard files: <span id="file-141299" class="file file-document file-application-vndms-excelsheetmacroenabled12"><a href="https://www.epa.gov/sites/production/files/2015-06/dataset_1_0.xlsm" type="application/vnd.ms-excel.sheet.macroEnabled.12; length=740094" class="file-link">dataset_1.xlsm (Microsoft Excel)</a><span class="fileinfo">(1 pg, 740 K)</span></span>
+, <span id="file-141301" class="file file-document file-application-vndms-excelsheetmacroenabled12"><a href="https://www.epa.gov/sites/production/files/2015-06/dataset_2.xlsm" type="application/vnd.ms-excel.sheet.macroEnabled.12; length=740202" class="file-link">dataset_2.xlsm (Microsoft Excel)</a><span class="fileinfo">(1 pg, 740 K)</span></span>
+, and <span id="file-141303" class="file file-document file-application-vndms-excelsheetmacroenabled12"><a href="https://www.epa.gov/sites/production/files/2015-06/dataset_3.xlsm" type="application/vnd.ms-excel.sheet.macroEnabled.12; length=740223" class="file-link">dataset_3.xlsm (Microsoft Excel)</a><span class="fileinfo">(1 pg, 740 K)</span></span>
+.</li>
+	<li>For each file, go to the Main worksheet. You can change the Output File Directory to the working directory. Click <strong>AUTORUN</strong>.</li>
+	<li>Compare the results tabs of all three worksheets.</li>
+</ol><h4><a id="ex1q1" name="ex1q1"></a>Question 1</h4>
+
+<ul class="accordion"><li><a class="accordion-title" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#pane-1" title="Click to expand description">Which model would you choose for each individual tumor?</a>
+
+		<div class="accordion-pane" id="pane-1">
+			<p>dataset_1 – Multistage Cancer 1 (Lowest BMDL and lowest <a class="termlookup-tooltip" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#self" occurrence="1">Akaike Information Criteria<span class="termlookup-custom"><img alt="Help" src="../sites/all/modules/custom/add_definitions/images/add_definitions_icon_popup_help.png" height="48" width="48" /><em>Akaike Information Criteria</em>A statistical procedure that provides a measure of the goodness-of-fit of a dose-response model to a set of data. AIC = -2 x (LL - p), where LL is the log-likelihood at the maximum likelihood fit, and p is the degrees of freedom of the model (usually, the number of parameters estimated).</span></a> (AIC))</p>
+
+			<p>dataset _2 – Multistage Cancer 1 (BMDL and AIC are the same for all multistage cancer models)</p>
+
+			<p>dataset _3 - Multistage Cancer 1 (BMDL and AIC are the same for all multistage cancer models)</p>
+
+			<p>When the BMDS Wizard recommends all multistage models for the endpoint, it typically means the higher degree models have defaulted to the 1st degree model (meaning the b2 and b3 parameters have been estimated to equal 0). However, the user should make sure that the modeling results for the 3rd and 2nd degree models are exactly the same as the results for the 1st degree model. In some instances, although the b2 and b3 parameters are estimated to equal 0, a larger parameter space has been searched, which can result in a lower BMDL or a higher BMDU. In the situation where a higher degree multistage model has exactly the same parameter values as a lower degree model, but a lower BMDL, the higher degree model should be selected.</p>
+		</div>
+	</li>
+</ul><h4><a id="ex1q2" name="ex1q2"></a>Question 2</h4>
+
+<ul class="accordion"><li><a class="accordion-title" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#pane-2" title="Click to expand description">If your dose response analysis depended on selecting one tumor type as the critical effect, which tumor type (tumor 1, 2, or 3) would you choose? What would be the recommended BMDL?</a>
+
+		<div class="accordion-pane" id="pane-2">
+			<p>Tumor 1, with a BMDL of 657</p>
+		</div>
+	</li>
+</ul><ol start="5"><li>For each worksheet, go to the Results tab. In the "Include in Summary Table?" column, locate the preferred model's row, and click to change the cell value from Include to Select. The MS_Combo worksheet will use the Select model for its calculations.<span
+    class="figure image file file-image file-image-png view-mode-full" style="width:413px;"><img alt="Options available in the &quot;Include in Summary Table?&quot; column" title="Options available in the &quot;Include in Summary Table?&quot; column" height="291" width="413" class="media-element file-full" typeof="foaf:Image" src="https://www.epa.gov/sites/production/files/styles/large/public/2015-06/insumtab.png" /></span></li>
+</ol><h3><a id="ex1s2" name="ex1s2"></a>Step 2 - Run the MS_Combo Model</h3>
+
+<ol start="6"><li>Open the BMDS_MSComboWizard.xlsm template file and save a copy to your working directory as "qs_mscombo.xlsm".</li>
+	<li>Click <strong>2) Select BMDS Directory</strong> to locate and enter the directory where BMDS 2.5 (or higher) is installed.</li>
+	<li>Click <strong>3) Select Wizard Directory</strong> to locate and enter the working directory containing the Wizard files for the individual tumors.<span
+    class="figure image file file-image file-image-png view-mode-full" style="width:628px;"><img alt="Specifying the BMDS and Wizard directory paths" title="Specifying the BMDS and Wizard directory paths" height="92" width="628" class="media-element file-full" typeof="foaf:Image" src="https://www.epa.gov/sites/production/files/styles/large/public/2015-06/runms_combomodel.png" /></span></li>
+	<li>Click in the 4) Input Filename (*.tum) cell. Enter a filename for the multitumor (*.tum) file that the Wizard will create and send to the BMDS application for processing. The Wizard will also create a corresponding output file (*.out). <strong>Example:</strong> Enter "qs_exercise" for the .tum filename, and the Wizard will automatically display "qs_exercise.out".<span
+    class="figure image file file-image file-image-png view-mode-full" style="width:628px;"><img alt="Specifying a filename for the multitumor file" title="Specifying a filename for the multitumor file" height="63" width="628" class="media-element file-full" typeof="foaf:Image" src="https://www.epa.gov/sites/production/files/styles/large/public/2015-06/inputname.png" /></span></li>
+	<li>In the 5) Session Inputs section, click in a cell to display the Wizard filenames in the working directory. Select the appropriate file for each cell.</li>
+</ol><blockquote>
+	<p><strong>Note:</strong> Look in the Wizard Selection Information section just below the Session Inputs. You'll see the file names appear at the top of each column.<span
+    class="figure image file file-image file-image-png view-mode-full" style="width:628px;"><img alt="Clicking in a cell to display the Wizard filenames in the working directory" title="Clicking in a cell to display the Wizard filenames in the working directory" height="257" width="628" class="media-element file-full" typeof="foaf:Image" src="https://www.epa.gov/sites/production/files/styles/large/public/2015-06/sessioninput.png" /></span></p>
+</blockquote>
+
+<ol start="11"><li>Click <strong>6) Get Tumor Information</strong>. The Wizard opens each specified file, gathers the data about the Selected model for each endpoint, and transfers that data to the Wizard Selection Information section of the MS_Combo worksheet.<br /><br />
+		The ERRORS! and VALIDATION WARNINGS boxes notify you of any problems identified with the files, such as if no model was Selected for an endpoint. In this case, you may see warnings such as "Endpoints have been selected from multiple studies" and "Please fill in all user inputs". Despite the validation warnings, the Wizard will run the MS_Combo model to completion.<span
+    class="figure image file file-image file-image-png view-mode-full" style="width:628px;"><img alt="The Wizard Selection Information cells with details on each multitumor file" title="The Wizard Selection Information cells with details on each multitumor file" height="343" width="628" class="media-element file-full" typeof="foaf:Image" src="https://www.epa.gov/sites/production/files/styles/large/public/2015-06/wizardseleinfo.png" /></span></li>
+	<li>Enter User Inputs, which are located at the bottom of the Wizard Selection Information section. Here, you can enter information on the species, sex, and tissue for each endpoint. You can enter whatever you like here, but the same values must be entered for all three tumors. Click <strong>6) Get Tumor Information</strong> again to see if there are any further validation messages.<span
+    class="figure image file file-image file-image-png view-mode-full" style="width:628px;"><img alt="Entering details on species, sex, and tissue for the User Inputs cells" title="Entering details on species, sex, and tissue for the User Inputs cells" height="88" width="628" class="media-element file-full" typeof="foaf:Image" src="https://www.epa.gov/sites/production/files/styles/large/public/2015-06/userinputs.png" /></span></li>
+	<li>Click buttons <strong>(A)</strong> through <strong>(C)</strong> at the top of the sheet to step through the process of creating a BMDS session file, running the BMDS session, and importing the results into the MS_Combo Wizard worksheet. Click OK at the information windows to acknowledge the creation of the .tum file and the BMDS run.</li>
+	<li>Click <strong>(D) Import Results</strong> to display the Results worksheet. You can also click the <strong>View Output File</strong> button to see the formatted BMDS results.<span
+    class="figure image file file-image file-image-png view-mode-full" style="width:628px;"><img alt="Results worksheet showing outcomes of the BMDS run" title="Results worksheet showing outcomes of the BMDS run" height="236" width="628" class="media-element file-full" typeof="foaf:Image" src="https://www.epa.gov/sites/production/files/styles/large/public/2015-06/outputinfo.png" /></span><span
+    class="figure image file file-image file-image-png view-mode-full" style="width:628px;"><img alt="Click the View Output File button to see the formatted BMDS results" title="Click the View Output File button to see the formatted BMDS results" height="511" width="628" class="media-element file-full" typeof="foaf:Image" src="https://www.epa.gov/sites/production/files/styles/large/public/2015-06/bmdsoutput.png" /></span></li>
+</ol><h4><a id="ex1q3" name="ex1q3"></a>Question 3</h4>
+
+<ul class="accordion"><li><a class="accordion-title" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#pane-3" title="Click to expand description">Compare the results of the MS_Combo run to the individual results of the three multistage worksheets. How do the MS_Combo results compare to the individual tumor results and why?</a>
+
+		<div class="accordion-pane" id="pane-3">
+			<p>The BMDL for the MS-Combo model (327.901) is lower than the BMDLs for the individual models (656.727, 1138.85, and 903.823 for mscombo_1, mscombo_2, and mscombo_3, respectively). This is because the MS_Combo model is calculating the risk of developing <em><strong>ANY</strong></em> combination of tumors.</p>
+		</div>
+	</li>
+</ul><p class="pagetop"><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#main-content">Top of Page</a></p>
+
+<h2><a id="ex2" name="ex2"></a>Exercise 2 - Cancer Data</h2>
+
+<h3><a id="ex2s1" name="ex2s1"></a>Step1 - Run the Multistage Models</h3>
+
+<ol type="1"><li>Download and open the following Wizard dichotomous cancer files: <span id="file-141305" class="file file-document file-application-vndms-excelsheetmacroenabled12"><a href="https://www.epa.gov/sites/production/files/2015-06/lung.xlsm" type="application/vnd.ms-excel.sheet.macroEnabled.12; length=821750" class="file-link">lung.xlsm (Microsoft Excel)</a><span class="fileinfo">(1 pg, 822 K)</span></span>
+, <span id="file-141307" class="file file-document file-application-vndms-excelsheetmacroenabled12"><a href="https://www.epa.gov/sites/production/files/2015-06/liver.xlsm" type="application/vnd.ms-excel.sheet.macroEnabled.12; length=812977" class="file-link">liver.xlsm (Microsoft Excel)</a><span class="fileinfo">(1 pg, 813 K)</span></span>
+, and <span id="file-141309" class="file file-document file-application-vndms-excelsheetmacroenabled12"><a href="https://www.epa.gov/sites/production/files/2015-06/kidney.xlsm" type="application/vnd.ms-excel.sheet.macroEnabled.12; length=816354" class="file-link">kidney.xlsm (Microsoft Excel)</a><span class="fileinfo">(1 pg, 816 K)</span></span>
+.</li>
+	<li>For each file, select the BMDS Installation directory and the desired Output file directory</li>
+	<li>For each file, click AUTORUN.</li>
+	<li>For each file, on the Results tab , in the "Include in Summary Table?" column, locate the preferred model's row, and click to change the cell value from Include to Select.</li>
+</ol><h4><a id="ex2q1" name="ex2q1"></a>Question 1</h4>
+
+<ul class="accordion"><li><a class="accordion-title" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#pane-4" title="Click to expand description">What is the AIC value associated with this model run?</a>
+
+		<div class="accordion-pane" id="pane-4">
+			<p>1049.33</p>
+		</div>
+	</li>
+</ul><h3><a id="ex2s2" name="ex2s2"></a>Step 2 - Run the MS_Combo Model</h3>
+
+<ol start="5" style="list-style-type:decimal" type="1"><li>Open the BMDS_MSComboWizard.xlsm template file and save a copy to your working directory as "qs_mscombo_ex2.xlsm".</li>
+	<li>Specify the BMDS Installation directory and the Wizard directory.</li>
+	<li>In the 4) Input Filename section, enter a name for the .tum file that BMDS will use to run the MS_Combo model.</li>
+	<li>In the 5) Session Inputs section, select the three individual Wizard files from Step 1.</li>
+	<li>Click <strong>6) Get Tumor Information</strong>.</li>
+	<li>Fill in User Inputs for species and sex.</li>
+	<li>Click buttons <strong>(A)</strong> through <strong>(C)</strong> at the top of the sheet to step through the process of creating a BMDS session file, running the BMDS session, and importing the results into the MS_Combo Wizard worksheet. Click OK to acknowledge the creation of the .tum file and the BMDS run.</li>
+	<li>Click <strong>(D) Import Results</strong> to display the Results worksheet. You can also click the <strong>View Output File</strong> button to see the formatted BMDS results.</li>
+</ol><h4><a id="ex2q2" name="ex2q2"></a>Question 2</h4>
+
+<ul class="accordion"><li><a class="accordion-title" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#pane-5" title="Click to expand description">Compare the model results from the three dichotomous cancer files and the MS_Combo file to the results below.</a>
+
+		<div class="accordion-pane" id="pane-5">
+			<div>
+				<table><tbody><tr><td> </td>
+							<th>Lung</th>
+							<th>Liver</th>
+							<th>Kidney</th>
+							<th>MS_Combo</th>
+						</tr><tr><td><strong>Degree Multistage</strong></td>
+							<td>2<sup>nd</sup></td>
+							<td>1<sup>st</sup></td>
+							<td>2<sup>nd</sup></td>
+							<td>n/a</td>
+						</tr><tr><td><strong>BMD<sub>10</sub></strong></td>
+							<td>25.1</td>
+							<td>12.5</td>
+							<td>15.5</td>
+							<td>6.48</td>
+						</tr><tr><td><strong>BMDL<sub>10</sub></strong></td>
+							<td>14.4</td>
+							<td>9.75</td>
+							<td>9.47</td>
+							<td>4.5</td>
+						</tr><tr><td><strong>CSF</strong></td>
+							<td>0.0069</td>
+							<td>0.0103</td>
+							<td>0.0106</td>
+							<td>0.0222</td>
+						</tr><tr><td><strong>AIC</strong></td>
+							<td>150.07</td>
+							<td>151.88</td>
+							<td>157.62</td>
+							<td>n/a</td>
+						</tr><tr><td><strong>p value</strong></td>
+							<td>0.259</td>
+							<td>0.752</td>
+							<td>0.276</td>
+							<td>n/a</td>
+						</tr><tr><td><strong>Scaled residual</strong></td>
+							<td>0.773</td>
+							<td>-0.407</td>
+							<td>-0.705</td>
+							<td>n/a</td>
+						</tr></tbody></table></div>
+		</div>
+	</li>
+</ul><p class="pagetop"><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#main-content">Top of Page</a></p>
+
+<h2><a id="ex3" name="ex3"></a>Exercise 3 - Poly-3 Survival Adjustment</h2>
+
+<p>Dose group-specific mortality rates can vary in cancer bioassays. Differences in the rate of mortality (i.e., numbers of dead) and increases in the onset of death (i.e., time to death) between exposure groups could potentially bias modeling results and should be accounted for.</p>
+
+<p><em>Poly-3 Survival Adjustment </em>is a method that calculates survival-adjusted lifetime tumor rates by fractionally weighting the number of exposed animals (i.e., sample size). The calculation requires individual animal data with times of death and tumor status.</p>
+
+<p>The National Toxicology Program (NTP) uses a poly-3 adjustment to scale the number of animals able to exhibit a carcinogenic response to exposure. The poly-3 adjusted values are reported alongside un-adjusted values in NTP reports.</p>
+
+<p>“Poly-3” refers specifically to using a 3<sup>rd</sup>-order polynomial to describe the tumor incidence function in time. Other polynomials can be used, but estimating the correct polynomial can be difficult.</p>
+
+<p>One benefit of using a poly-3 adjustment scheme is that multiple poly-3 adjusted tumor datasets can be incorporated in an MS_Combo analysis – and so we can use the MS_Combo Wizard to run a poly-3 analysis.</p>
+
+<h3><a id="ex3s1" name="ex3s1"></a>Step 1 – Run the Multistage model</h3>
+
+<ol type="1"><li>Download and open the following Wizard dichotomous cancer files: <span id="file-141311" class="file file-document file-application-vndms-excelsheetmacroenabled12"><a href="https://www.epa.gov/sites/production/files/2015-06/lung_poly3.xlsm" type="application/vnd.ms-excel.sheet.macroEnabled.12; length=731272" class="file-link">lung_poly3.xlsm (Microsoft Excel)</a><span class="fileinfo">(1 pg, 731 K)</span></span>
+, <span id="file-141313" class="file file-document file-application-vndms-excelsheetmacroenabled12"><a href="https://www.epa.gov/sites/production/files/2015-06/liver_poly3.xlsm" type="application/vnd.ms-excel.sheet.macroEnabled.12; length=737303" class="file-link">liver_poly3.xlsm (Microsoft Excel)</a><span class="fileinfo">(1 pg, 737 K)</span></span>
+, and <span id="file-141315" class="file file-document file-application-vndms-excelsheetmacroenabled12"><a href="https://www.epa.gov/sites/production/files/2015-06/kidney_poly3.xlsm" type="application/vnd.ms-excel.sheet.macroEnabled.12; length=737347" class="file-link">kidney_poly3.xlsm (Microsoft Excel)</a><span class="fileinfo">(1 pg, 737 K)</span></span>
+.</li>
+	<li>For each file, select the BMDS Installation directory and the desired Output file directory</li>
+	<li>For each file, click <strong>AUTORUN</strong>.</li>
+	<li>For each file, on the Results tab , in the "Include in Summary Table?" column, locate the preferred model's row, and click to change the cell value from <em>Include</em> to <em>Select</em>.</li>
+</ol><h3><a id="ex3s2" name="ex3s2"></a>Step 2 – Run the MS_Combo model</h3>
+
+<ol start="5" style="list-style-type:decimal" type="1"><li>Open the BMDS_MSComboWizard.xlsm template file and save a copy to your working directory as "qs_mscombo_poly3.xlsm".</li>
+	<li>Specify the BMDS Installation directory and the Wizard directory.</li>
+	<li>In the 4) Input Filename section, enter a name for the .tum file that BMDS will use to run the MS_Combo model.</li>
+	<li>Select the three individual poly-3 Wizard files from Step 1.</li>
+	<li>Click <strong>6) Get Tumor Information</strong>.</li>
+	<li>Fill in User Inputs for species and sex. You can enter whatever you like here, but the same values must be entered for all three tumors.</li>
+	<li>Click buttons <strong>(A)</strong> through <strong>(C)</strong> at the top of the sheet to step through the process of creating a BMDS session file, running the BMDS session, and importing the results into the MS_Combo Wizard worksheet. Click OK to acknowledge the creation of the .tum file and the BMDS run.</li>
+	<li>Click <strong>(D) Import Results</strong> to display the Results worksheet. You can also click the <strong>View Output File</strong> button to see the formatted BMDS results.</li>
+</ol><h4><a id="ex3q1" name="ex3q1"></a>Question</h4>
+
+<ul class="accordion"><li><a class="accordion-title" href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#pane-6" title="Click to expand description">Compare the model results from the three dichotomous cancer files and the MS_Combo file to the results below.</a>
+
+		<div class="accordion-pane" id="pane-6">
+			<div>
+				<table><tbody><tr><td> </td>
+							<th>Lung_poly3</th>
+							<th>Liver_poly3</th>
+							<th>Kidney_poly3</th>
+							<th>MS_Combo</th>
+						</tr><tr><td><strong>Degree Multistage</strong></td>
+							<td>2<sup>nd</sup></td>
+							<td>1<sup>st</sup></td>
+							<td>2<sup>nd</sup></td>
+							<td>n/a</td>
+						</tr><tr><td><strong>BMD<sub>10</sub></strong></td>
+							<td>16.7</td>
+							<td>8.10</td>
+							<td>10.9</td>
+							<td>4.15</td>
+						</tr><tr><td><strong>BMDL<sub>10</sub></strong></td>
+							<td>8.69</td>
+							<td>6.28</td>
+							<td>6.01</td>
+							<td>2.33</td>
+						</tr><tr><td><strong>CSF</strong></td>
+							<td>0.0115</td>
+							<td>0.0159</td>
+							<td>0.0167</td>
+							<td>0.0430</td>
+						</tr><tr><td><strong>AIC</strong></td>
+							<td>115.05</td>
+							<td>117.65</td>
+							<td>116.64</td>
+							<td>n/a</td>
+						</tr><tr><td><strong>p value</strong></td>
+							<td>0.112</td>
+							<td>0.830</td>
+							<td>0.0965</td>
+							<td>n/a</td>
+						</tr><tr><td><strong>Scaled residual</strong></td>
+							<td>-1.02</td>
+							<td>-0.764</td>
+							<td>-1.01</td>
+							<td>n/a</td>
+						</tr></tbody></table></div>
+		</div>
+	</li>
+</ul><p class="pagetop"><a href="multiple-tumor-analysis-mscombo-model-use-bmds-wizard.html#main-content">Top of Page</a></p>
+
+<div><strong>Previous: </strong><a href="viewing-text-and-graphics-output-benchmark-dose-software-bmds-and-bmds-wizard.html">Viewing Text and Graphics Output</a></div>
+
+<p><strong>Next: </strong><a href="repeated-responsetoxicodiffusion-modeling-use-benchmark-dose-software-bmds.html">Repeated Response/ToxicoDiffusion Modeling (Use with BMDS)</a></p>
+</div>
+  </div>
+
+  
+  
+</div>
+
+</div>
+<aside class="col size-1of4">
+<div class="panel-pane pane-fieldable-panels-pane pane-vid-108509 pane-bundle-fieldable-panels-pane pane-fpid-5679 box multi related-info" >
+
+  
+  
+      <h2 class="pane-title">Quick Start Guide Sections</h2>
+  
+  
+  
+  <div class="pane-content">
+    <div>
+	<div class="pane-content">
+		<div class="clearfix">
+			<h3>Getting Started</h3>
+
+			<ul><li><a href="about-quick-start-guide-benchmark-dose-software-bmds-and-bmds-wizard.html">About the Quick Start Guide</a></li>
+				<li><a href="installing-benchmark-dose-software-bmds-and-bmds-wizard.html">Installing BMDS and ICF's BMDS Wizard</a></li>
+			</ul><h3>The Basics - Using BMDS and the BMDS Wizard</h3>
+
+			<ul><li><a href="choosing-use-benchmark-dose-software-bmds-or-bmds-wizard.html">Choosing to Use BMDS or ICF's BMDS Wizard</a></li>
+				<li><a href="using-benchmark-dose-software-bmds-quickly-evaluate-single-dichotomous-dataset.html">Using BMDS to Quickly Evaluate a Single Dichotomous Dataset</a></li>
+				<li><a href="setting-and-using-bmds-wizard-tips-and-best-practices.html">Setting Up &amp; Using BMDS Wizard – Tips and Best Practices</a></li>
+				<li><a href="bmds-wizard-basics-and-using-bmds-wizard-evaluate-dichotomous-datasets.html">BMDS Wizard Basics and Using BMDS Wizard to Evaluate Dichotomous Datasets</a></li>
+				<li><a href="using-bmds-wizard-evaluate-continuous-datasets.html">Using BMDS Wizard to Evaluate Continuous Datasets</a></li>
+				<li><a href="viewing-text-and-graphics-output-benchmark-dose-software-bmds-and-bmds-wizard.html">Viewing Text and Graphics Output</a></li>
+			</ul><h3>Additional Models</h3>
+
+			<ul><li>Multiple-Tumor Analysis with MS_Combo model (Use with BMDS Wizard)</li>
+				<li><a href="repeated-responsetoxicodiffusion-modeling-use-benchmark-dose-software-bmds.html">Repeated Response/ToxicoDiffusion Modeling (Use with BMDS)</a></li>
+				<li><a href="ten-berge-concentration-x-time-model-use-benchmark-dose-software-bmds.html">ten Berge Concentration x Time Model (Use with BMDS)</a></li>
+				<li><a href="nested-dichotomous-data-use-benchmark-dose-software-bmds.html">Nested Dichotomous Data (Use with BMDS)</a></li>
+			</ul><h3>Reference</h3>
+
+			<ul><li><a href="https://ofmpub.epa.gov/sor_internet/registry/termreg/searchandretrieve/glossariesandkeywordlists/search.do?details=&amp;vocabName=BMDS%20Glossary&amp;uid=1821254&amp;taxonomyName=BMDS%20Glossary">Glossary</a></li>
+				<li><a href="benchmark-dose-bmd-methods.html">BMD Methods</a></li>
+				<li><a href="additional-benchmark-dose-software-bmds-resources.html">Additional BMDS Resources</a></li>
+			</ul></div>
+	</div>
+</div>
+  </div>
+
+  
+  
+</div>
+
+</aside>
+</div><div id="block-pane-epa-web-area-footer" class="block block-pane  block-pane-epa-web-area-footer">
+  
+  
+  
+  
+    <p class="web-area-footer"><a href="../node/72263.html" class="contact-us">Contact Us</a> to ask a question, provide feedback, or report a problem.</p>  
+</div>
+  
+    <!--googleoff: all-->
+      </div>
+  
+  
+  <div class="region-sidebar-first region-sidebar">  <div id="block-og-menu-og-single-menu-block" class="block block-og-menu  block-og-menu-og-single-menu-block">
+
+      <h2 class="element-invisible">Benchmark Dose Software</h2>
+  
+  
+    <ul class="menu"><li class="menu-item"><a href="../node/72261.html" title="BMDS Home Page" class="menu-node-unpublished menu-link">BMDS Home</a></li>
+<li class="menu-item"><a href="../node/84799.html" title="About BMDS" class="menu-node-unpublished menu-link">What is BMDS?</a></li>
+<li class="menu-item"><a href="../node/85459.html" title="Download BMDS application, model executables, and source code" class="menu-node-unpublished menu-link">Downloads</a></li>
+<li class="menu-item"><a href="../node/85321.html" title="The BMDS Quick Start Guide is a self-paced, hands-on software tutorial" class="menu-node-unpublished menu-link">BMDS Quick Start</a></li>
+<li class="menu-item"><a href="../node/84847.html" title="Recordings of BMDS training webinars that teach basic concepts and BMD methods" class="menu-node-unpublished menu-link">BMDS Training</a></li>
+<li class="menu-item"><a href="benchmark-dose-bmd-methods.html" title="Highlights from the Benchmark Dose Technical Guidance document" class="menu-node-unpublished menu-link">BMD Methods</a></li>
+<li class="menu-item"><a href="timeline-external-reviews-benchmark-dose-software-bmds-models.html" title="Links to peer reviewed documents related to BMDS model and application development and release" class="menu-node-unpublished menu-link">External Reviews</a></li>
+<li class="menu-item"><a href="additional-benchmark-dose-software-bmds-resources.html" title="Links to other software or information related to BMDS" class="menu-node-unpublished menu-link">Additional BMDS Resources</a></li>
+</ul>  
+</div>
+  </div>
+</section>
+
+  <nav class="nav simple-nav simple-main-nav" role="navigation">
+    <div class="nav__inner">
+      <h2 class="element-invisible">Main menu</h2><ul class="menu"><li class="expanded menu-item"><a href="../learn-issues.1.html" title="View links to the most popular pages for each of EPA’s top environmental topics." class="menu-link">Environmental Topics</a><ul class="menu"><li class="menu-item"><a href="../learn-issues/learn-about-air.html" title="" class="menu-link">Air</a></li>
+<li class="menu-item"><a href="../node/17591.html" title="" class="menu-link">Bed Bugs</a></li>
+<li class="menu-item"><a href="../learn-issues/learn-about-chemicals-and-toxics.html" title="" class="menu-link">Chemicals and Toxics</a></li>
+<li class="menu-item"><a href="../climatechange/index.html" title="" class="menu-link">Climate Change</a></li>
+<li class="menu-item"><a href="../node/165443.html" title="" class="menu-link">Environmental Information by Location</a></li>
+<li class="menu-item"><a href="../learn-issues/greener-living-resources.html" title="" class="menu-link">Greener Living</a></li>
+<li class="menu-item"><a href="../learn-issues/learn-about-health-and-safety.html" title="" class="menu-link">Health</a></li>
+<li class="menu-item"><a href="../learn-issues/learn-about-waste.html" title="" class="menu-link">Land, Waste, and Cleanup</a></li>
+<li class="menu-item"><a href="../lead/index.html" title="" class="menu-link">Lead</a></li>
+<li class="menu-item"><a href="../mold/mold_remediation.html" title="" class="menu-link">Mold</a></li>
+<li class="menu-item"><a href="../pesticides/health/index.htm" title="" class="menu-link">Pesticides</a></li>
+<li class="menu-item"><a href="../radon/pubs/citguide.html" title="" class="menu-link">Radon</a></li>
+<li class="menu-item"><a href="../learn-issues/water-resources.html" title="" class="menu-link">Water</a></li>
+<li class="menu-item"><a href="../node/164885.html" title="" class="menu-link">A-Z Index</a></li>
+</ul></li>
+<li class="menu-item"><a href="../lawsregs/guidance/wetlands/mining.cfm.html" title="View links to regulatory information by topic and sector, and to top pages about environmental laws, regulations, policies, compliance, and enforcement." class="menu-link">Laws &amp; Regulations</a><ul class="menu"><li class="menu-item"><a href="../node/3173.html" title="" class="menu-link">By Business Sector</a></li>
+<li class="menu-item"><a href="../node/66677.html" title="" class="menu-link">By Topic</a></li>
+<li class="menu-item"><a href="../node/19411.html" title="" class="menu-link">Compliance</a></li>
+<li class="menu-item"><a href="../node/10885.html" title="" class="menu-link">Enforcement</a></li>
+<li class="menu-item"><a href="../node/66719.html" title="" class="menu-link">Laws and Executive Orders</a></li>
+<li class="menu-item"><a href="../node/11139.html" title="" class="menu-link">Policy and Guidance</a></li>
+<li class="menu-item"><a href="../node/11249.html" title="" class="menu-link">Regulations</a></li>
+</ul></li>
+<li class="expanded menu-item"><a href="https://www.epa.gov/aboutepa" title="Learn more about our mission, organization, and locations." class="menu-link">About EPA</a><ul class="menu"><li class="menu-item"><a href="https://www.epa.gov/aboutepa/epas-acting-administrator" title="" class="menu-node-unpublished menu-link">EPA Administrator</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa/current-epa-leadership" title="" class="menu-link">Current Leadership</a></li>
+<li class="menu-item"><a href="../epahome/locate1.htm" title="" class="menu-link">Organization Chart</a></li>
+<li class="menu-item"><a href="http://cfpub.epa.gov/locator/index.cfm" title="" class="menu-link">Staff Directory</a></li>
+<li class="menu-item"><a href="../node/863.html" title="" class="menu-link">Planning, Budget and Results</a></li>
+<li class="menu-item"><a href="../node/32663.html" title="" class="menu-link">Jobs and Internships</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa#pane-2" title="" class="menu-link">Headquarters Offices</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa#pane-4" title="" class="menu-link">Regional Offices</a></li>
+<li class="menu-item"><a href="https://www.epa.gov/aboutepa#pane-5" title="" class="menu-link">Labs and Research Centers</a></li>
+</ul></li>
+</ul>    </div>
+  </nav>
+
+
+<footer class="main-footer clearfix" role="contentinfo">
+  <div class="main-footer__inner">
+    
+  
+  <div class="region-footer">  <div id="block-pane-epa-global-footer" class="block block-pane  block-pane-epa-global-footer">
+  
+  
+  
+  
+    <div class="row cols-3">
+  <div class="col size-1of3">
+    <div class="col__title">Discover.</div>
+    <ul class="menu">
+      <li><a href="../node/39087.html">Accessibility</a></li>
+      <li><a href="https://www.epa.gov/aboutepa/administrator-gina-mccarthy">EPA Administrator</a></li>
+      <li><a href="../node/863.html">Budget &amp; Performance</a></li>
+      <li><a href="../oam/ptod/activeindex.htm">Contracting</a></li>
+      <li><a href="../home/grants-and-other-funding-opportunities.html">Grants</a></li>
+      <li><a href="https://www.epa.gov/ocr/whistleblower-protections-epa-and-how-they-relate-non-disclosure-agreements-signed-epa-employees">No FEAR Act Data</a></li>
+      <li><a href="../node/383.html">Privacy and Security</a></li>
+    </ul>
+  </div>
+  <div class="col size-1of3">
+    <div class="col__title">Connect.</div>
+    <ul class="menu">
+      <li><a href="https://www.data.gov/">Data.gov</a></li>
+      <li><a href="../node/44743.html">Inspector General</a></li>
+      <li><a href="../node/32663.html">Jobs</a></li>
+      <li><a href="https://www.epa.gov/newsroom">Newsroom</a></li>
+      <li><a href="../open.html">Open Government</a></li>
+      <li><a href="https://www.regulations.gov/">Regulations.gov</a></li>
+      <li><a href="https://www.epa.gov/newsroom/email-subscriptions">Subscribe</a></li>
+      <li><a href="https://www.usa.gov/">USA.gov</a></li>
+      <li><a href="https://www.whitehouse.gov/">White House</a></li>
+    </ul>
+  </div>
+  <div class="col size-1of3">
+    <div class="col__title">Ask.</div>
+    <ul class="menu">
+      <li><a href="../home/forms/contact-us.html">Contact Us</a></li>
+      <li><a href="../node/45821.html">Hotlines</a></li>
+      <li><a href="../node/40665.html">FOIA Requests</a></li>
+      <li><a href="../node/1623.html">Frequent Questions</a></li>
+    </ul>
+
+    <div class="col__title">Follow.</div>
+    <ul class="social-menu">
+      <li><a class="menu-link social-facebook" href="https://www.facebook.com/EPA">Facebook</a></li>
+      <li><a class="menu-link social-twitter" href="https://twitter.com/epa">Twitter</a></li>
+      <li><a class="menu-link social-youtube" href="https://www.youtube.com/user/USEPAgov">YouTube</a></li>
+      <li><a class="menu-link social-flickr" href="https://www.flickr.com/photos/usepagov">Flickr</a></li>
+      <li><a class="menu-link social-instagram" href="https://www.instagram.com/epagov">Instagram</a></li>
+    </ul>
+
+    <p class="last-updated">Last updated on September 8, 2016</p>
+  </div>
+</div>  
+</div>
+  </div>
+  </div>
+</footer>
+  <script type="text/javascript" src="../sites/production/files/js/js_LcFRnnSHVah-Aw_WQ8aVLXhp3HPJvrOe4h6YEXA5BT8.js"></script>
+<script type="text/javascript" src="../sites/production/files/js/js_oZD9-WvfiElJ5KPavqu9ZAQiZcfWlzNCzxFHpedR9dI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/production/files/js/js_slEmfY49PYt03JJafrjvmxmEfVQE7vqI-454V7NM5ys.js"></script>
+<script type="text/javascript" src="../sites/all/modules/custom/epa_core/js/alert.js%3Fokbvd7"></script>
+<script type="text/javascript" src="../sites/production/files/js/js_cjmkhjdYj9qyv8rH-ylGyD-SIMacZ-dzdqW9m8x_TEc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName('script')[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0005/9240.js";
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+      
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/production/files/js/js_UG00nMwTXcewn_yu8c3s7Bgbxmhbdk0BE1GwQLAuoQU.js"></script>
+<script type="text/javascript" src="../sites/production/files/js/js_CaVFOiO3QpcJYEzSDhR3RmEeSnMbgnImgh5uEDkDD_0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"epa","theme_token":"E-fkEgvJJTFQhdUfzTQCmzIKrvRUjBzxhoUK0jtno2s"},"epa_wysiwyg":{"site_default_lang":"en"},"add_definitions":{"path":"sites\/all\/modules\/custom\/add_definitions","dictionary_filter":"1","dictionary_undo":"1","dictionary_occurrences":"1","service_endpoint":"https:\/\/termlookup.epa.gov\/termlookup\/v1\/terms"},"ogContext":{"groupType":"node","gid":"72261"}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script src="/sites/all/themes/epa/js/ie.js"></script><![endif]--></body>
+</html>
+
+<!-- Page cached by Boost @ 2017-01-25 16:56:20, expires @ 2017-01-26 04:56:20, lifetime 12 hours -->
